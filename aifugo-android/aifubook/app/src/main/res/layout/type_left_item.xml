@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_20dp"
+        android:gravity="center_vertical"
+        style="@style/Linear_H">
+        <TextView
+            android:id="@+id/inLine"
+            android:background="@color/F95435"
+            android:layout_width="@dimen/space_3dp"
+            android:layout_height="@dimen/space_40dp" />
+
+        <TextView
+            android:id="@+id/mName"
+            android:textColor="@color/F95435"
+            android:layout_marginLeft="@dimen/space_20dp"
+            android:text="图书"
+            style="@style/TextSize_16_Color_Black_threes" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/space_20dp"
+        android:gravity="center_vertical"
+        style="@style/Linear_H">
+        <TextView
+            android:background="@color/view_color_F8F8F8"
+            android:layout_width="@dimen/space_3dp"
+            android:layout_height="@dimen/space_40dp" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/space_20dp"
+            android:text="图书"
+            style="@style/TextSize_16_Color_Black_threes" />
+
+    </LinearLayout>
+</LinearLayout>

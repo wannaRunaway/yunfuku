@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dp"
+    android:layout_marginTop="@dimen/space_12dp"
+    android:layout_marginRight="6dp"
+    fresco:cardCornerRadius="8dp"
+    android:id="@+id/parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/inProductDetails"
+        style="@style/Linear_V"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/mImageView"
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:scaleType="fitXY"
+            fresco:roundedCornerRadius="5dp"
+            fresco:viewAspectRatio="1"
+            android:background="@color/F9F9F9"
+            />
+
+        <TextView
+            android:id="@+id/mBookName"
+            style="@style/TextSize_14_Color_Black_threes"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/space_5dp"
+            android:paddingRight="@dimen/space_5dp"
+            android:singleLine="true"
+            android:text="状元作业本 一年级语文上册" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="11dp"
+            >
+
+            <TextView
+                android:id="@+id/mPrice"
+                style="@style/TextSize_14_Color_Black_threes"
+                android:text="￥666"
+                android:textColor="#F96042"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="￥24.90"
+                android:textColor="@color/color_979797"
+                android:textSize="9dp"
+                android:layout_toRightOf="@+id/mPrice"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:id="@+id/iv_addCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:padding="@dimen/space_5dp"
+                android:src="@mipmap/addcart_new"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

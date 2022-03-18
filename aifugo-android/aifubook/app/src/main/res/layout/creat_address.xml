@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/view_color_F8F8F8"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <include layout="@layout/view_titlebar_theme_color" />
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       >
+     <LinearLayout
+         android:background="@color/white"
+         style="@style/Linear_H"
+         android:layout_height="@dimen/space_50dp">
+
+        <TextView
+            android:text="联系人"
+            style="@style/TextSize_14_Color_Black_threes"
+            android:paddingLeft="@dimen/space_10dp"
+            android:textColor="@color/black"
+            android:gravity="left|center_vertical"
+            android:layout_width="@dimen/space_80dp"
+            android:layout_height="@dimen/space_50dp" />
+
+        <EditText
+            android:textSize="@dimen/font_size_12sp"
+            android:id="@+id/peopleName"
+            android:background="@color/white"
+            android:paddingRight="@dimen/space_10dp"
+            android:paddingLeft="@dimen/space_10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+     </LinearLayout>
+
+      <LinearLayout
+          android:layout_marginTop="1dp"
+          android:background="@color/white"
+          style="@style/Linear_H"
+          android:layout_height="@dimen/space_50dp">
+
+         <TextView
+             android:text="联系方式"
+             style="@style/TextSize_14_Color_Black_threes"
+             android:paddingLeft="@dimen/space_10dp"
+             android:gravity="left|center_vertical"
+             android:textColor="@color/black"
+             android:layout_width="@dimen/space_80dp"
+             android:layout_height="@dimen/space_50dp" />
+
+         <EditText
+             android:id="@+id/peoplePhone"
+             android:background="@color/white"
+             android:paddingRight="@dimen/space_10dp"
+             android:paddingLeft="@dimen/space_10dp"
+             android:textSize="@dimen/font_size_12sp"
+             android:textColor="@color/black"
+             android:gravity="center_vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_marginTop="1dp"
+          android:background="@color/white"
+          style="@style/Linear_H"
+          android:layout_height="@dimen/space_50dp">
+
+         <TextView
+             android:text="省份"
+             style="@style/TextSize_14_Color_Black_threes"
+             android:paddingLeft="@dimen/space_10dp"
+             android:gravity="left|center_vertical"
+             android:textColor="@color/black"
+             android:layout_width="@dimen/space_80dp"
+             android:layout_height="@dimen/space_50dp" />
+
+         <TextView
+             android:drawableRight="@mipmap/ic_chevron_right_black_24dp"
+             android:id="@+id/slectPoi"
+             android:background="@color/white"
+           android:gravity="center_vertical"
+             android:textColor="@color/black"
+             android:paddingRight="@dimen/space_10dp"
+             android:paddingLeft="@dimen/space_10dp"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" />
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_marginTop="1dp"
+          android:background="@color/white"
+          style="@style/Linear_H"
+          android:layout_height="@dimen/space_50dp">
+
+         <TextView
+             android:text="城市"
+             style="@style/TextSize_14_Color_Black_threes"
+             android:textColor="@color/black"
+             android:paddingLeft="@dimen/space_10dp"
+             android:gravity="left|center_vertical"
+
+             android:layout_width="@dimen/space_80dp"
+             android:layout_height="@dimen/space_50dp" />
+
+         <TextView
+             android:id="@+id/mSelectCity"
+             android:drawableRight="@mipmap/ic_chevron_right_black_24dp"
+             android:background="@color/white"
+             android:paddingRight="@dimen/space_10dp"
+             android:paddingLeft="@dimen/space_10dp"
+             android:textColor="@color/black"
+             android:gravity="center_vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" />
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_marginTop="1dp"
+          android:background="@color/white"
+          style="@style/Linear_H"
+          android:layout_height="@dimen/space_50dp">
+
+         <TextView
+             android:text="地区"
+             style="@style/TextSize_14_Color_Black_threes"
+             android:paddingLeft="@dimen/space_10dp"
+             android:gravity="left|center_vertical"
+             android:textColor="@color/black"
+             android:layout_width="@dimen/space_80dp"
+             android:layout_height="@dimen/space_50dp" />
+
+         <TextView
+             android:id="@+id/mSelectArae"
+             android:drawableRight="@mipmap/ic_chevron_right_black_24dp"
+             android:background="@color/white"
+             android:textColor="@color/black"
+             android:paddingRight="@dimen/space_10dp"
+             android:paddingLeft="@dimen/space_10dp"
+             android:gravity="center_vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" />
+
+      </LinearLayout>
+      <LinearLayout
+          android:paddingTop="@dimen/space_10dp"
+          android:gravity="top"
+          android:layout_marginTop="1dp"
+          android:background="@color/white"
+          style="@style/Linear_H"
+          android:minHeight="@dimen/space_80dp">
+
+         <TextView
+             android:text="详细地址"
+             style="@style/TextSize_14_Color_Black_threes"
+             android:paddingLeft="@dimen/space_10dp"
+             android:gravity="left|center_vertical"
+             android:textColor="@color/black"
+             android:layout_width="@dimen/space_80dp"
+             android:layout_height="wrap_content" />
+
+         <EditText
+             android:id="@+id/mAddressDetails"
+             android:paddingRight="@dimen/space_10dp"
+             android:paddingLeft="@dimen/space_10dp"
+             android:textSize="@dimen/font_size_12sp"
+             android:paddingTop="@dimen/space_10dp"
+             android:background="@color/white"
+             android:textColor="@color/black"
+             android:gravity="top"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" />
+
+      </LinearLayout>
+
+   </LinearLayout>
+
+   <TextView
+       android:layout_marginRight="@dimen/space_30dp"
+       android:layout_marginLeft="@dimen/space_30dp"
+       android:layout_marginTop="@dimen/space_60dp"
+       android:id="@+id/saveAddress"
+       android:layout_alignParentBottom="true"
+       android:text="保存地址"
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:textColor="@color/white"
+       android:layout_height="@dimen/space_50dp"
+       android:background="@drawable/homepage_theme_ra_45"
+       style="@style/TextSize_14_Color_Black_threes" />
+
+</LinearLayout>

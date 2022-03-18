@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_10dp"
+        android:layout_marginRight="@dimen/space_15dp"
+        android:layout_marginLeft="@dimen/space_15dp"
+        android:layout_height="@dimen/space_90dp"
+        android:background="@drawable/shape_white_5dp"
+        style="@style/Linear_H">
+
+        <ImageView
+            android:id="@+id/addressImageView"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="@dimen/space_15dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <RelativeLayout
+            android:paddingLeft="@dimen/space_10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:text="新华书店-北门"
+                style="@style/TextSize_14_Color_Black_threes" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/space_5dp"
+                android:id="@+id/details_tv"
+                android:layout_marginTop="@dimen/space_5dp"
+                android:layout_below="@+id/tv_address"
+                android:singleLine="true"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:maxEms="13"
+                android:text="浙江省杭州市西湖区华彩国际的卢卡斯吉东卢卡库圣诞节啦看到接口拉升"
+                android:drawableLeft="@mipmap/image_fragment_mine_address"
+                style="@style/text_12sp_black" />
+
+            <TextView
+                android:id="@+id/addressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_tv"
+                android:layout_marginTop="@dimen/space_5dp"
+                android:text="距离您50米"
+                android:textColor="@color/F95435"
+                android:textSize="@dimen/font_size_13sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:theme="@style/cb_test"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

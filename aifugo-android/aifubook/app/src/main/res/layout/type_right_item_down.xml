@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/ll_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="@dimen/space_90dp"
+        style="@style/Linear_V">
+
+
+        <com.jiarui.base.fresco.CommonImage
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="20dp"
+            android:scaleType="centerCrop"
+            fresco:actualImageScaleType="fitXY"
+            fresco:viewAspectRatio="1" />
+
+        <TextView
+            android:id="@+id/threeName"
+            android:text="一年級"
+            style="@style/TextSize_12_Color_Black_threes" />
+
+    </LinearLayout>
+
+</LinearLayout>

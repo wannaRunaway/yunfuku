@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_classDetails"
+    android:layout_width="@dimen/space_65dp"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/space_10dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/grid_img"
+        android:layout_width="@dimen/space_30dp"
+        android:layout_height="@dimen/space_30dp"
+        android:layout_marginBottom="@dimen/space_5dp"
+        android:adjustViewBounds="true"
+        android:gravity="center_horizontal"
+        android:scaleType="fitXY"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/grid_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+</LinearLayout>

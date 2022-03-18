@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/space_5dp"
+        android:layout_marginTop="@dimen/space_3dp"
+        android:background="@mipmap/bg_yhq_item"
+        android:layout_width="@dimen/space_60dp"
+        android:layout_height="@dimen/space_40dp">
+
+        <TextView
+            android:layout_marginTop="@dimen/space_10dp"
+            android:layout_marginLeft="@dimen/space_5dp"
+            android:textSize="@dimen/font_size_8sp"
+            android:id="@+id/moneyI"
+            android:text="￥"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textFontWeight="600"
+            android:id="@+id/showMoneyNumber"
+            android:textSize="@dimen/font_size_18sp"
+            android:layout_toRightOf="@+id/moneyI"
+            android:text="30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/sendCoup"
+            android:layout_marginTop="@dimen/space_3dp"
+            android:layout_below="@+id/moneyI"
+            android:layout_marginLeft="@dimen/space_5dp"
+            android:textSize="@dimen/font_size_8sp"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

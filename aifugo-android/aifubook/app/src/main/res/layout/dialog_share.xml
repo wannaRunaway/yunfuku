@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/shareView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="52dp"
+        android:background="@drawable/homepage_share_ra_45"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+
+        <com.jiarui.base.fresco.CommonImage
+            android:id="@+id/iv_header"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/left_margin_inside"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="20dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            fresco:actualImageScaleType="fitXY"
+            fresco:roundAsCircle="true"
+            fresco:viewAspectRatio="1" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="张三"
+            android:textColor="@color/black_threes"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_header"
+            app:layout_constraintLeft_toRightOf="@id/iv_header"
+            app:layout_constraintTop_toTopOf="@id/iv_header" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/right_margin_inside"
+            android:text="推荐了一个宝贝"
+            android:textColor="@color/black_threes"
+            app:layout_constraintBottom_toBottomOf="@id/iv_header"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_header"
+            app:layout_constraintVertical_bias="0.9" />
+
+        <LinearLayout
+            android:id="@+id/ll_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="36dp"
+            android:background="@drawable/shape_white_top_10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView">
+
+
+            <com.jiarui.base.fresco.CommonImage
+                android:id="@+id/iv_book"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                fresco:roundedCornerRadius="5dp"
+                fresco:viewAspectRatio="1" />
+
+            <TextView
+                android:id="@+id/tv_book_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:gravity="left"
+                android:text="状元语文笔记四年级2222求8999999999999999"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@id/ll_center"
+                app:layout_constraintRight_toRightOf="@id/ll_center"
+                app:layout_constraintTop_toBottomOf="@id/iv_book" />
+
+            <TextView
+                android:id="@+id/tv_book_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="￥838939"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="@id/ll_center"
+                app:layout_constraintRight_toRightOf="@id/ll_center"
+                app:layout_constraintTop_toBottomOf="@id/tv_book_name" />
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:text="￥838939"
+                android:textColor="@color/gray5"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="@id/ll_center"
+                app:layout_constraintRight_toRightOf="@id/ll_center"
+                app:layout_constraintTop_toBottomOf="@id/tv_price" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_cr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_qrcode"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="用云辅库APP\n扫描查看"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/showSharCode"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="微信小程序中\n查看"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/iv_litter_left"
+            android:text="买教辅就上云辅库"
+            android:textColor="@color/black_threes"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_cr" />
+
+
+        <TextView
+            android:id="@+id/tv_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_margin_inside"
+            android:layout_marginTop="30dp"
+            android:text="云辅库小程序"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_center" />
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_margin_inside"
+            android:layout_marginTop="10dp"
+            android:text="长按识别二维码，查看宝贝"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_min" />
+
+        <TextView
+            android:id="@+id/tv_des2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_margin_inside"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/iv_mark"
+            android:drawablePadding="6dp"
+            android:text="价格和促销以商品详情为准"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_des" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_top_10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_10dp"
+            android:text="分享到"
+            android:textColor="@color/gray1"
+            android:textSize="@dimen/font_size_14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/showSharWechar"
+                    style="@style/TextSize_14_Color_Black_threes"
+                    android:layout_marginLeft="@dimen/space_20dp"
+                    android:drawableTop="@mipmap/wechat_shar"
+                    android:drawablePadding="@dimen/space_10dp"
+                    android:gravity="center"
+                    android:text="微信好友" />
+
+                <TextView
+                    android:id="@+id/showSharSave"
+                    style="@style/TextSize_14_Color_Black_threes"
+                    android:layout_marginLeft="@dimen/space_50dp"
+                    android:drawableTop="@mipmap/wechat_save"
+                    android:drawablePadding="@dimen/space_10dp"
+                    android:gravity="center"
+                    android:text="保存图片" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/showSharCancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/view_color_F8F8F8"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/black_threes" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

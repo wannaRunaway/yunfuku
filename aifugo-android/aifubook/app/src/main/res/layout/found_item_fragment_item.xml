@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/space_15dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/space_30dp"
+            android:layout_height="@dimen/space_30dp"
+            android:layout_marginRight="@dimen/space_10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_head_portrait"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/tv_sourceAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="瑞士旅游局官方号"
+            android:textColor="@color/view_color_AAAAAA"
+            android:textSize="@dimen/font_size_14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_12dp"
+        android:text="走！搭乘环游火车，去探索瑞士最迷人的圣诞市场～"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_16sp" />
+
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_130dp"
+        android:layout_marginBottom="@dimen/space_10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_home_banner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_10dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_20dp"
+            android:layout_marginRight="@dimen/space_40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_comments"
+                android:drawablePadding="@dimen/space_6dp"
+                android:gravity="center_vertical"
+                android:text="262"
+                android:textColor="@color/view_color_7D7D7D"
+                android:textSize="@dimen/font_size_12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_like"
+                android:gravity="center_vertical"
+                android:text="262"
+                android:textColor="@color/view_color_7D7D7D"
+                android:textSize="@dimen/font_size_12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

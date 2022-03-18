@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="side_letter_bar_width">36dp</dimen>
+    <dimen name="side_letter_bar_letter_size">13sp</dimen>
+    <dimen name="size_175">175dp</dimen>
+    <dimen name="space_65dp">65dp</dimen>
+    <dimen name="space_9dp">9dp</dimen>
+    <dimen name="space_10dp">10dp</dimen>
+    <dimen name="space_11dp">11dp</dimen>
+    <dimen name="space_12dp">12dp</dimen>
+    <dimen name="space_13dp">13dp</dimen>
+    <dimen name="space_15dp">15dp</dimen>
+    <dimen name="space_18dp">18dp</dimen>
+    <dimen name="space_55dp">55dp</dimen>
+    <dimen name="space_75dp">75dp</dimen>
+    <dimen name="space_250dp">250dp</dimen>
+    <dimen name="space_265dp">265dp</dimen>
+    <dimen name="space_125dp">125dp</dimen>
+    <dimen name="space_350dp">350dp</dimen>
+    <dimen name="space_225dp">225dp</dimen>
+    <dimen name="space_500dp">500dp</dimen>
+    <dimen name="space_600dp">600dp</dimen>
+    <dimen name="space_700dp">700dp</dimen>
+    <dimen name="space_800dp">800dp</dimen>
+
+
+    <!-- text size -->
+    <dimen name="big_title_size">20sp</dimen>
+    <dimen name="title_textsize">16sp</dimen>
+    <dimen name="desc_textsize">14sp</dimen>
+    <dimen name="time_size">12.0sp</dimen>
+    <dimen name="small_text_size">10sp</dimen>
+
+    <dimen name="navigate_text_size">16sp</dimen>
+
+    <!-- 方块的高度 -->
+    <dimen name="fangkuai_height">45dp</dimen>
+    <dimen name="edge_distance">10dp</dimen>
+
+    <!-- 分割线的高度 -->
+    <dimen name="divider_line_height">0.7dp</dimen>
+    <!--垂直方向内间距高度-->
+    <dimen name="vertical_space_height">12dp</dimen>
+    <!-- 页面左边距离 -->
+    <dimen name="left_margin">16dp</dimen>
+    <!-- 页面右边距离 -->
+    <dimen name="right_margin">16dp</dimen>
+    <!-- 页面上边距离 -->
+    <dimen name="top_margin">24dp</dimen>
+    <dimen name="top_common_margin">16dp</dimen>
+    <!-- 页面底部距离 -->
+    <dimen name="bottom_margin">24dp</dimen>
+    <!--行间距-->
+    <dimen name="lineSpacingExtra">3dp</dimen>
+
+    <dimen name="back_top_margin">10dp</dimen>
+
+    <dimen name="left_margin_inside">22dp</dimen>
+    <dimen name="right_margin_inside">22dp</dimen>
+
+
+    <!--圆角大小-->
+    <dimen name="small_corner">3dp</dimen>
+    <dimen name="midle_corner">10dp</dimen>
+    <dimen name="big_corner">15dp</dimen>
+
+    <!-- 页面head高度 -->
+    <dimen name="page_head_height">48dp</dimen>
+    <!-- 标题文本背景高度 -->
+    <dimen name="text_navi_bg_height">50dp</dimen>
+    <dimen name="account_navi_bg_height">60dp</dimen>
+    <!-- 提交按钮commit高度 -->
+    <dimen name="text_commit_bg_height">48dp</dimen>
+    <!--  输入项或选择项文本框高度-->
+    <dimen name="text_common_bg_height">48dp</dimen>
+
+    <!-- 顶部导航背景高度 -->
+    <dimen name="top_navi_bg_height">33dp</dimen>
+
+    <!-- 头像大小 -->
+    <dimen name="head_small_size">30dp</dimen>
+    <dimen name="head_mid_size">60dp</dimen>
+    <dimen name="head_big_size">75dp</dimen>
+    <dimen name="head_large_big_size">100dp</dimen>
+
+    <dimen name="top_navi_height">48dp</dimen>
+
+    <!-- 状态栏 间距 title_bar_padding_top-->
+    <dimen name="title_bar_padding_top">20dp</dimen>
+    <dimen name="priority_order_form_left_w">110dp</dimen>
+    <dimen name="choose_img_w_h">18dp</dimen>
+
+    <dimen name="img_myfg_size">20dp</dimen>
+
+    <dimen name="right_arrow_size">14dp</dimen>
+    <dimen name="market_margin_right">120dp</dimen>
+
+    <dimen name="edittext_padding_left">10dp</dimen>
+    <dimen name="top_bar_height">30dp</dimen>
+    <dimen name="elevation_value">5dp</dimen>
+    <dimen name="wallet_card_left">32dp</dimen>
+
+</resources>

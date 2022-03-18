@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_color_F8F8F8"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_titlebar_theme_color" />
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        style="@style/Linear_H"
+        android:layout_height="@dimen/space_50dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/TextSize_14_Color_Black_threes"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/space_15dp"
+            android:text="手机绑定" />
+
+        <TextView
+            android:id="@+id/phoneUpDate"
+            style="@style/TextSize_14_Color_Black_threes"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/space_15dp"
+            android:drawableRight="@mipmap/ic_chevron_right_black_24dp"
+            android:paddingLeft="@dimen/space_15dp"
+            android:singleLine="true"
+            android:text="15070402940"
+            android:textColor="@color/gray1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emailUpDate"
+        style="@style/Linear_H"
+        android:visibility="gone"
+        android:layout_height="@dimen/space_50dp"
+        android:layout_marginTop="@dimen/space_0.5dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/TextSize_14_Color_Black_threes"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/space_15dp"
+            android:text="邮箱绑定" />
+
+        <TextView
+            android:id="@+id/emailTextView"
+            style="@style/TextSize_14_Color_Black_threes"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/space_15dp"
+            android:drawableRight="@mipmap/ic_chevron_right_black_24dp"
+            android:paddingLeft="@dimen/space_15dp"
+            android:textColor="@color/gray1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/WechatlUpDate"
+        style="@style/Linear_H"
+        android:layout_height="@dimen/space_50dp"
+        android:layout_marginTop="@dimen/space_0.5dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/TextSize_14_Color_Black_threes"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/space_15dp"
+            android:text="微信绑定" />
+
+        <TextView
+            android:id="@+id/isBindWechat"
+            style="@style/TextSize_14_Color_Black_threes"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/space_15dp"
+            android:drawableRight="@mipmap/ic_chevron_right_black_24dp"
+            android:paddingLeft="@dimen/space_15dp"
+            android:text=""
+            android:textColor="@color/gray1" />
+
+    </LinearLayout>
+
+</LinearLayout>

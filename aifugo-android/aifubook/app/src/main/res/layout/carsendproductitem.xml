@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginRight="@dimen/space_15dp"
+        android:layout_marginLeft="@dimen/space_15dp"
+        android:background="@drawable/shape_white_10dp"
+        style="@style/Linear_H"
+        android:layout_height="@dimen/space_100dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/mImgs"
+            android:src="@mipmap/bg_home_banner"
+            android:layout_width="@dimen/space_80dp"
+            android:layout_height="@dimen/space_80dp"
+            android:layout_marginLeft="@dimen/space_15dp" />
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/space_15dp"
+            android:layout_height="match_parent"
+            style="@style/Linear_V">
+
+            <TextView
+                android:id="@+id/mName"
+                android:text="波尔加幼儿头脑多维训练（套装全5册）"
+                android:layout_marginRight="@dimen/space_40dp"
+                style="@style/TextSize_12_Color_Black_threes" />
+
+            <TextView
+                android:id="@+id/mDes"
+                style="@style/TextSize_12_Color_Black_threes"
+                android:textColor="@color/gray1"
+                android:layout_marginRight="@dimen/space_15dp"
+                android:layout_marginTop="@dimen/space_5dp"
+                android:text=""/>
+
+            <LinearLayout
+                android:gravity="bottom"
+                android:layout_marginTop="@dimen/space_5dp"
+                android:layout_marginRight="@dimen/space_10dp"
+                style="@style/Linear_H">
+
+                <TextView
+                    android:id="@+id/mPrice"
+                    android:text="￥250.00"
+                    android:textColor="#FF3333"
+                    style="@style/TextSize_15_Color_Black_threes" />
+
+                <TextView
+                    android:id="@+id/mDriprice"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/space_5dp"
+                    android:text="250.00"
+                    android:textColor="@color/gray1"
+                    android:textSize="@dimen/font_size_10sp"
+                    style="@style/TextSize_12_Color_Black_threes" />
+
+                <TextView
+                    android:id="@+id/mDripriceCount"
+                    android:textFontWeight="600"
+                    android:text="x1"
+                    style="@style/TextSize_15_Color_Black_threes" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

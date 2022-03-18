@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_grade_16_white"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:paddingBottom="@dimen/space_60dp">
+
+    <TextView
+        android:id="@+id/textview_title"
+        style="@style/text_18sp_bold_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_16dp"
+        android:text="设置年级"
+        app:layout_constraintEnd_toEndOf="@+id/parent"
+        app:layout_constraintStart_toStartOf="@+id/parent"
+        app:layout_constraintTop_toTopOf="@+id/parent" />
+
+    <TextView
+        android:id="@+id/textview_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textview_title"
+        app:layout_constraintEnd_toEndOf="@+id/parent"
+        android:text="X"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/textview_name1"
+        style="@style/text_16sp_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="小学"
+        app:layout_constraintStart_toStartOf="@+id/parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_title" />
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/textview_name1">
+
+        <TextView
+            android:id="@+id/textview_grade1"
+            style="@style/text_16sp_black"
+            android:layout_width="@dimen/space_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_12dp"
+            android:layout_weight="1"
+            android:background="@drawable/grade_dialog"
+            android:gravity="center"
+            android:paddingTop="@dimen/space_11dp"
+            android:paddingBottom="@dimen/space_11dp"
+            android:text="一年级" />
+
+        <TextView
+            android:id="@+id/textview_grade2"
+            style="@style/text_16sp_black"
+            android:layout_width="@dimen/space_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_12dp"
+            android:layout_marginRight="@dimen/space_12dp"
+            android:layout_weight="1"
+            android:background="@drawable/grade_dialog"
+            android:gravity="center"
+            android:paddingTop="@dimen/space_11dp"
+            android:paddingBottom="@dimen/space_11dp"
+            android:text="二年级" />
+
+        <TextView
+            android:id="@+id/textview_grade3"
+            style="@style/text_16sp_black"
+            android:layout_width="@dimen/space_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_12dp"
+            android:layout_weight="1"
+            android:background="@drawable/grade_dialog"
+            android:gravity="center"
+            android:paddingTop="@dimen/space_11dp"
+            android:paddingBottom="@dimen/space_11dp"
+            android:text="三年级" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/line1">
+
+        <TextView
+            android:id="@+id/textview_grade4"
+            style="@style/text_16sp_black"
+            android:layout_width="@dimen/space_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_12dp"
+            android:layout_weight="1"
+            android:background="@drawable/grade_dialog"
+            android:gravity="center"
+            android:paddingTop="@dimen/space_11dp"
+            android:paddingBottom="@dimen/space_11dp"
+            android:text="四年级" />
+
+        <TextView
+            android:id="@+id/textview_grade5"
+            style="@style/text_16sp_black"
+            android:layout_width="@dimen/space_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_12dp"
+            android:layout_marginRight="@dimen/space_12dp"
+            android:layout_weight="1"
+            android:background="@drawable/grade_dialog"
+            android:gravity="center"
+            android:paddingTop="@dimen/space_11dp"
+            android:paddingBottom="@dimen/space_11dp"
+            android:text="五年级" />
+
+        <TextView
+            android:id="@+id/textview_grade6"
+            style="@style/text_16sp_black"
+            android:layout_width="@dimen/space_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_12dp"
+            android:layout_weight="1"
+            android:background="@drawable/grade_dialog"
+            android:gravity="center"
+            android:paddingTop="@dimen/space_11dp"
+            android:paddingBottom="@dimen/space_11dp"
+            android:text="六年级" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview_name2"
+        style="@style/text_16sp_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="初中"
+        app:layout_constraintStart_toStartOf="@+id/parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+    <LinearLayout
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/textview_name2">
+
+        <TextView
+            android:id="@+id/textview_grade7"
+            style="@style/text_16sp_black"
+            android:layout_width="@dimen/space_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_12dp"
+            android:layout_weight="1"
+            android:background="@drawable/grade_dialog"
+            android:gravity="center"
+            android:paddingTop="@dimen/space_11dp"
+            android:paddingBottom="@dimen/space_11dp"
+            android:text="七年级" />
+
+        <TextView
+            android:id="@+id/textview_grade8"
+            style="@style/text_16sp_black"
+            android:layout_width="@dimen/space_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_12dp"
+            android:layout_marginRight="@dimen/space_12dp"
+            android:layout_weight="1"
+            android:background="@drawable/grade_dialog"
+            android:gravity="center"
+            android:paddingTop="@dimen/space_11dp"
+            android:paddingBottom="@dimen/space_11dp"
+            android:text="八年级" />
+
+        <TextView
+            android:id="@+id/textview_grade9"
+            style="@style/text_16sp_black"
+            android:layout_width="@dimen/space_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_12dp"
+            android:layout_weight="1"
+            android:background="@drawable/grade_dialog"
+            android:gravity="center"
+            android:paddingTop="@dimen/space_11dp"
+            android:paddingBottom="@dimen/space_11dp"
+            android:text="九年级" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

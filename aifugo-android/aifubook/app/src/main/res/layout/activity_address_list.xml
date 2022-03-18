@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/view_color_F8F8F8"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_titlebar_theme_color" android:id="@+id/mTheme" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/space_10dp"
+        android:layout_below="@+id/mTheme"
+        android:id="@+id/mRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/addNewAddress"
+        android:layout_alignParentBottom="true"
+        android:text="添加新地址"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_height="@dimen/space_40dp"
+        android:background="@drawable/homepage_theme"
+        style="@style/TextSize_14_Color_Black_threes" />
+
+
+</RelativeLayout>

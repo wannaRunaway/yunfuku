@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/outSelect"
+        style="@style/Linear_V"
+        android:layout_height="@dimen/space_130dp"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            style="@style/Linear_H"
+            android:layout_marginTop="@dimen/space_5dp"
+            android:paddingLeft="@dimen/space_15dp"
+            android:paddingRight="@dimen/space_15dp">
+
+            <TextView
+                android:id="@+id/mName"
+                style="@style/TextSize_14_Color_Black_threes"
+                android:layout_weight="1"
+                android:text="誰啊誰" />
+
+
+
+            <CheckBox
+                android:id="@+id/mCheckBox"
+                style="@style/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:checked="false"
+                android:text="设为默认" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/mPhone"
+            style="@style/TextSize_14_Color_Black_threes"
+            android:layout_marginBottom="@dimen/space_5dp"
+            android:paddingLeft="@dimen/space_15dp"
+            android:text="15070707070" />
+
+        <TextView
+            android:id="@+id/mAddress"
+            style="@style/TextSize_14_Color_Black_threes"
+            android:paddingLeft="@dimen/space_15dp"
+            android:text="浙江省杭州市西湖区文一社区泊寓公寓" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            style="@style/Line_0Zero5_F5F5F5"
+            android:layout_height="@dimen/space_0.5dp"
+            android:layout_marginTop="@dimen/space_3dp" />
+
+        <LinearLayout
+            style="@style/Linear_H"
+            android:layout_height="@dimen/space_35dp">
+
+            <TextView
+                android:id="@+id/mUpDate"
+                style="@style/TextSize_14_Color_Black_threes"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="编辑" />
+
+            <TextView
+                android:id="@+id/mDetele"
+                style="@style/TextSize_14_Color_Black_threes"
+                android:layout_marginLeft="@dimen/space_20dp"
+                android:layout_marginRight="@dimen/space_15dp"
+                android:gravity="right"
+                android:text="删除" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--状态栏添加values 与values-19适配-->
+    <dimen name="base_toolbar_height_v19">48dp</dimen>
+    <dimen name="status_bar_height">0dp</dimen>
+    <!---->
+    <dimen name="default_padding_top">8dp</dimen>
+    <dimen name="default_padding_bottom">8dp</dimen>
+    <dimen name="inner_padding_left">0dp</dimen>
+    <dimen name="inner_padding_right">0dp</dimen>
+    <dimen name="padding_left">10dp</dimen>
+    <dimen name="padding_right">10dp</dimen>
+    <dimen name="padding_top">15dp</dimen>
+    <dimen name="padding_bottom">15dp</dimen>
+
+    <dimen name="floating_label_text_size">12sp</dimen>
+    <dimen name="bottom_text_size">12sp</dimen>
+    <dimen name="inner_components_spacing">8dp</dimen>
+    <dimen name="bottom_ellipsis_height">4dp</dimen>
+    <dimen name="bottom">0dp</dimen>
+    <dimen name="_10dp">10dp</dimen>
+    <dimen name="three_grid_unit">24dp</dimen>
+    <dimen name="one_and_a_half_grid_unit">12dp</dimen>
+    <dimen name="base_toolbar_height">48dp</dimen>
+
+    <dimen name="__picker_iwf_actionBarSize">48dip</dimen>
+    <dimen name="__picker_item_photo_size">80dip</dimen>
+    <dimen name="__picker_item_camera_size">80dip</dimen>
+    <dimen name="__picker_item_directory_height">80dp</dimen>
+
+    <dimen name="gudieview_width">6dp</dimen>
+    <dimen name="gudieview_heigh">6dp</dimen>
+
+    <dimen name="space_0dp">0dp</dimen>
+    <dimen name="space_0.5dp">0.5dp</dimen>
+    <dimen name="space_1dp">1dp</dimen>
+    <dimen name="space_2dp">2dp</dimen>
+    <dimen name="space_3dp">3dp</dimen>
+    <dimen name="space_4dp">4dp</dimen>
+    <dimen name="space_5dp">5dp</dimen>
+    <dimen name="space_6dp">6dp</dimen>
+    <dimen name="space_7dp">7dp</dimen>
+    <dimen name="space_8dp">8dp</dimen>
+    <dimen name="space_9dp">9dp</dimen>
+    <dimen name="space_10dp">10dp</dimen>
+    <dimen name="space_13dp">13dp</dimen>
+    <dimen name="space_15dp">15dp</dimen>
+    <dimen name="space_16dp">16dp</dimen>
+    <dimen name="space_18dp">18dp</dimen>
+    <dimen name="space_20dp">20dp</dimen>
+    <dimen name="space_26dp">26dp</dimen>
+    <dimen name="space_22dp">22dp</dimen>
+    <dimen name="space_25dp">25dp</dimen>
+    <dimen name="space_30dp">30dp</dimen>
+    <dimen name="space_28dp">28dp</dimen>
+    <dimen name="space_35dp">35dp</dimen>
+    <dimen name="space_38dp">38dp</dimen>
+    <!--<dimen name="space_36dp">36dp</dimen>-->
+    <dimen name="space_40dp">40dp</dimen>
+    <dimen name="space_45dp">45dp</dimen>
+    <dimen name="space_48dp">48dp</dimen>
+    <dimen name="space_50dp">50dp</dimen>
+    <dimen name="space_32dp">32dp</dimen>
+    <dimen name="space_60dp">60dp</dimen>
+    <dimen name="space_70dp">70dp</dimen>
+    <dimen name="space_80dp">80dp</dimen>
+    <dimen name="space_85dp">85dp</dimen>
+    <dimen name="space_90dp">90dp</dimen>
+    <dimen name="space_100dp">100dp</dimen>
+    <dimen name="space_110dp">110dp</dimen>
+    <dimen name="space_120dp">120dp</dimen>
+    <dimen name="space_130dp">130dp</dimen>
+    <dimen name="space_140dp">140dp</dimen>
+    <dimen name="space_150dp">150dp</dimen>
+    <dimen name="space_160dp">160dp</dimen>
+    <dimen name="space_170dp">170dp</dimen>
+    <dimen name="space_180dp">180dp</dimen>
+    <dimen name="space_200dp">200dp</dimen>
+    <dimen name="space_240dp">240dp</dimen>
+    <dimen name="space_260dp">260dp</dimen>
+    <dimen name="space_280dp">280dp</dimen>
+    <dimen name="space_300dp">300dp</dimen>
+    <dimen name="space_350dp">350dp</dimen>
+    <dimen name="space_400dp">400dp</dimen>
+    <dimen name="space_430dp">430dp</dimen>
+    <dimen name="space_225dp">225dp</dimen>
+
+    <dimen name="font_size_8sp">8sp</dimen>
+    <dimen name="font_size_10sp">10sp</dimen>
+    <dimen name="font_size_9sp">9sp</dimen>
+    <dimen name="font_size_11sp">11sp</dimen>
+    <dimen name="font_size_12sp">12sp</dimen>
+    <dimen name="font_size_15sp">15sp</dimen>
+    <dimen name="font_size_17sp">17sp</dimen>
+    <dimen name="font_size_19sp">19sp</dimen>
+    <dimen name="font_size_13sp">13sp</dimen>
+    <dimen name="font_size_14sp">14sp</dimen>
+    <dimen name="font_size_16sp">16sp</dimen>
+    <dimen name="font_size_18sp">18sp</dimen>
+    <dimen name="font_size_20sp">20sp</dimen>
+    <dimen name="font_size_22sp">22sp</dimen>
+    <dimen name="font_size_24sp">24sp</dimen>
+    <dimen name="font_size_26sp">26sp</dimen>
+    <dimen name="font_size_30sp">30sp</dimen>
+    <dimen name="font_size_36sp">36sp</dimen>
+    <dimen name="font_size_40sp">40sp</dimen>
+
+    <!-- text size -->
+    <dimen name="big_title_size">20sp</dimen>
+    <dimen name="title_textsize">16sp</dimen>
+    <dimen name="desc_textsize">14sp</dimen>
+    <dimen name="time_size">12.0sp</dimen>
+    <dimen name="small_text_size">10sp</dimen>
+
+    <dimen name="navigate_text_size">16sp</dimen>
+
+    <!-- 方块的高度 -->
+    <dimen name="fangkuai_height">45dp</dimen>
+    <dimen name="edge_distance">10dp</dimen>
+
+    <!-- 分割线的高度 -->
+    <dimen name="divider_line_height">0.7dp</dimen>
+    <!--垂直方向内间距高度-->
+    <dimen name="vertical_space_height">12dp</dimen>
+    <!-- 页面左边距离 -->
+    <dimen name="left_margin">16dp</dimen>
+    <!-- 页面右边距离 -->
+    <dimen name="right_margin">16dp</dimen>
+    <!-- 页面上边距离 -->
+    <dimen name="top_margin">24dp</dimen>
+    <dimen name="top_common_margin">16dp</dimen>
+    <!-- 页面底部距离 -->
+    <dimen name="bottom_margin">24dp</dimen>
+    <!--行间距-->
+    <dimen name="lineSpacingExtra">3dp</dimen>
+
+    <dimen name="back_top_margin">10dp</dimen>
+
+    <dimen name="left_margin_inside">22dp</dimen>
+    <dimen name="right_margin_inside">22dp</dimen>
+
+
+    <!--圆角大小-->
+    <dimen name="small_corner">3dp</dimen>
+    <dimen name="midle_corner">10dp</dimen>
+    <dimen name="big_corner">15dp</dimen>
+
+    <!-- 页面head高度 -->
+    <dimen name="page_head_height">48dp</dimen>
+    <!-- 标题文本背景高度 -->
+    <dimen name="text_navi_bg_height">50dp</dimen>
+    <dimen name="account_navi_bg_height">60dp</dimen>
+    <!-- 提交按钮commit高度 -->
+    <dimen name="text_commit_bg_height">48dp</dimen>
+    <!--  输入项或选择项文本框高度-->
+    <dimen name="text_common_bg_height">48dp</dimen>
+
+    <!-- 顶部导航背景高度 -->
+    <dimen name="top_navi_bg_height">33dp</dimen>
+
+    <!-- 头像大小 -->
+    <dimen name="head_small_size">30dp</dimen>
+    <dimen name="head_mid_size">60dp</dimen>
+    <dimen name="head_big_size">75dp</dimen>
+    <dimen name="head_large_big_size">100dp</dimen>
+
+    <dimen name="top_navi_height">48dp</dimen>
+
+    <!-- 状态栏 间距 title_bar_padding_top-->
+    <dimen name="title_bar_padding_top">20dp</dimen>
+    <dimen name="priority_order_form_left_w">110dp</dimen>
+    <dimen name="choose_img_w_h">18dp</dimen>
+
+    <dimen name="img_myfg_size">20dp</dimen>
+
+    <dimen name="right_arrow_size">14dp</dimen>
+    <dimen name="market_margin_right">120dp</dimen>
+
+</resources>

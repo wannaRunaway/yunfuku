@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_color_F8F8F8"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/view_titlebar_theme_color" />
+
+    <LinearLayout
+        style="@style/Linear_H"
+        android:layout_height="@dimen/space_100dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/shopLogo"
+            android:layout_width="@dimen/space_65dp"
+            android:layout_height="@dimen/space_65dp"
+            android:layout_marginLeft="@dimen/space_15dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/bg_home_banner" />
+
+        <LinearLayout
+            style="@style/Linear_V"
+            android:layout_marginLeft="@dimen/space_15dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/shopName"
+                style="@style/TextSize_16_Color_Black_threes"
+                android:layout_marginBottom="@dimen/space_5dp"
+                android:text="总店"
+                android:textFontWeight="600" />
+
+            <TextView
+                android:id="@+id/shopAddress"
+                style="@style/TextSize_12_Color_Black_threes"
+                android:layout_marginTop="@dimen/space_5dp"
+                android:layout_marginRight="@dimen/space_15dp"
+                android:text="地址：萧山区民企大厦萧山区民企大厦萧山区民企大厦104米就和人家南门口" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Linear_H"
+        android:layout_marginTop="@dimen/space_20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/SelectIn"
+                style="@style/TextSize_14_Color_Black_threes"
+                android:layout_width="wrap_content"
+                android:drawableRight="@mipmap/up_red"
+                android:gravity="center"
+                android:text="综合"
+                android:textColor="@color/red"
+                android:textFontWeight="500" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/SendIn"
+                style="@style/TextSize_14_Color_Black_threes"
+                android:layout_width="wrap_content"
+                android:drawableRight="@mipmap/up"
+                android:gravity="center"
+                android:text="销量"
+                android:textFontWeight="500" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_grade"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_grade"
+                style="@style/TextSize_14_Color_Black_threes"
+                android:layout_width="wrap_content"
+                android:drawableRight="@mipmap/up"
+                android:gravity="center"
+                android:text="筛选"
+                android:textFontWeight="500" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextSize_14_Color_Black_threes"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="价格"
+            android:textFontWeight="500"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/refresh_recyclerview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp" />
+
+
+</LinearLayout>

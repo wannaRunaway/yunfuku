@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <!--
+  This Activity is typically full-screen. Therefore we can safely use centerCrop scaling with
+  a SurfaceView, without fear of weird artifacts. -->
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/zxing_barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zxing_preview_scaling_strategy="centerCrop"
+        app:zxing_use_texture_view="false" />
+
+
+    <RelativeLayout
+        android:id="@+id/head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/page_head_height"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="@dimen/page_head_height"
+            android:layout_height="@dimen/page_head_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="14dp"
+            android:src="@drawable/icon_arrow_left" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/page_head_height"
+            android:layout_marginRight="@dimen/page_head_height"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="扫描二维码"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_textsize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="相册"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_textsize"
+            android:padding="5dp"
+            android:layout_marginRight="@dimen/right_margin"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+</merge>

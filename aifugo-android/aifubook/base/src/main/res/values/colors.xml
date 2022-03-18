@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#00b96b</color>
+    <color name="main_interval_color">#F1F0F6</color>
+
+    <color name="green">#00FF00</color>
+    <color name="light_gray">#E9E9E9</color>
+    <color name="thumbColor">#66AAAAAA</color>
+    <color name="dialog_text_color">#3C3C3C</color>
+    <color name="not_network_color">#FFECb3</color>
+
+
+    <color name="color_selected_cover">#99000000</color><!--70%BU透明度-->
+    <color name="color_unselected_center">#00000000</color><!--100%透明度-->
+    <color name="color_unselected_border">#40000000</color><!--25%透明度-->
+
+    <color name="share_cancle_color">#828282</color>
+
+    <!--pagerSlidingTabStrip-->
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="gold_color">#FEDAA3</color>
+
+    <!--主题色-->
+    <color name="theme_color">#FF897E</color>
+    <!--红色-->
+    <color name="red">#FA5647</color>
+    <color name="red2">#F63F2A</color>
+    <!--白色-->
+    <color name="white">#FFFFFF</color>
+
+    <color name="F95435">#F95435</color>
+    <color name="red_time">#F73B2C</color>
+    <!--黑色-->
+    <color name="black">#000000</color>
+    <!--浅黑色-->
+    <color name="dark_black">#454545</color>
+    <!--透明-->
+    <color name="transparent">#00000000</color>
+    <!--不同级别的灰色-->
+    <color name="black_three">#333333</color>
+    <color name="gray">#666666</color>
+    <color name="gray1">#999999</color>
+    <color name="gray2">#CCCCCC</color>
+    <color name="gray3">#EFEFEF</color>
+    <color name="gray4">#ff979797</color>
+    <color name="gray5">#ff808080</color>
+    <color name="gray6">#f3f3f3</color>
+    <color name="d8d8d8">#D8D8D8</color>
+    <color name="bbbbbb">#BBBBBB</color>
+    <color name="grey_text">#808080</color>
+    <color name="grey_text_del">#D9D9D9</color>
+
+    <!--弹窗框背景透明的黑色-->
+    <color name="dialog_bj_black">#77000000</color>
+    <!--线灰-->
+    <color name="main_liner_gray">#e4e4e4</color>
+    <!--10dp灰色-->
+    <color name="color_gray_10dp">#ededed</color>
+    <!--字体灰色-->
+    <color name="font_color_gray">#afafaf</color>
+    <color name="font_color_gray2">#fafafa</color>
+    <!--线-->
+    <color name="liner_gray_liner">#F4F4F4</color>
+    <color name="transparent90_white">#E5ffffff</color>
+    <color name="liner_eaeaea_liner">#EAEAEA</color>
+
+    <!--代表 下划线没有获取焦点的颜色 -->
+    <color name="colorControlNormal">@color/line_color</color>
+    <!--代表 下划线没有获取焦点的颜色 -->
+    <color name="colorControlActivated">#f5574c</color>
+    <color name="colorControlHighlight">#f5574c</color>
+
+
+    <color name="orange_red_text_color">#f5574c</color>
+
+    <!-- 顶部headview的背景色 -->
+    <color name="headview_color">#2196f3</color>
+    <!-- 应用页面的颜色 #ebebeb-->
+    <color name="page_color">#f7f7f7</color>
+
+    <!-- 标题的颜色 -->
+    <color name="title_text_color">#000000</color>
+    <!-- 描述的颜色 #757575-->
+    <color name="desc_text_color">#666666</color>
+    <color name="light_gray_text_color">#949494</color>
+
+
+    <!-- 边框线，分割线的颜色 -->
+    <color name="line_color">#e6e9ed</color>
+    <color name="line_color2">#0f000000</color>
+    <color name="line_color3">#12FFFFFF</color>
+    <!-- 主题色 -->
+    <color name="app_theme_color">#FF04BEF9</color>
+
+    <!-- 蓝色 -->
+    <!-- #197ccf -->
+    <color name="dark_blue_text_color">#0000ff</color>
+    <color name="blue_text_color">#2196f3</color>
+    <color name="alphablue_text_color">#262196f3</color>
+
+    <!-- 深橘黄色#FF8C00 -->
+    <color name="dark_orange_color">#FF6600</color>
+
+    <!-- 深灰色 -->
+    <color name="dark_gray">#A5A5A5</color>
+    <!-- 黑灰色 -->
+    <color name="black_gray">#37444A</color>
+
+    <!-- 不可点背景色 -->
+    <color name="unable_color">#EDEDF3</color>
+
+    <color name="maxblack">#383635</color>
+    <color name="midblack">#6A6A6C</color>
+    <color name="minblack">#ADACAC</color>
+    <!--  CornflowerBlue-->
+    <color name="corn_flower_blue">#6495ED</color>
+    <color name="medium_aqua_marine">#66CDAA</color>
+    <color name="light_red_color">#e67585</color>
+
+    <color name="share_menu_bg">#ededed</color>
+
+    <!-- 红色系 -->
+    <color name="dark_red_text_color">#ff0000</color>
+    <color name="red_text_color">#FFFE3D50</color>
+    <color name="light_red_text_color">#f5574c</color>
+
+    <!-- 绿色系 -->
+    <color name="dark_green_text_color">#008000</color>
+    <color name="green_text_color">#2abd73</color>
+    <color name="light_green_text_color">#2abd73</color>
+
+    <color name="default_status_color">#999999</color>
+    <color name="success_status_color">#FF007A18</color>
+    <color name="failure_status_color">#FFF5515F</color>
+
+    <!-- Edittext默认描述的颜色 -->
+    <color name="edit_text_color_hint">#a5a5a5</color>
+    <!-- Edittext默认描述后的颜色 -->
+    <color name="edit_text_color">@color/black</color>
+
+    <color name="btn_blue_start_color">#42A1EC</color>
+    <color name="btn_blue_end_color">#1771B9</color>
+    <color name="btn_border">#e4e4e4</color>
+    <color name="blue_text">#0070c9</color>
+    <color name="bg_grey">#F5F5F5</color>
+    <color name="color_gold">#FBF9F7</color>
+    <color name="color_gray_F3F3F3">#F3F3F3</color>
+    <color name="colordddddd">#DDDDDD</color>
+    
+</resources>

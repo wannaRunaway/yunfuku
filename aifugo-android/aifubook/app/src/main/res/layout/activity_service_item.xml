@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/Linear_V"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/space_15dp"
+        android:layout_marginTop="@dimen/space_15dp"
+        android:layout_marginRight="@dimen/space_15dp"
+        android:background="@drawable/shape_white_10dp">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_15dp"
+            android:text="新款上市"
+            android:textSize="@dimen/font_size_12sp" />
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_15dp"
+            android:scaleType="fitStart"
+            android:src="@mipmap/bg_home_banner" />
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50dp"
+            android:layout_marginRight="@dimen/space_10dp"
+            android:gravity="center_vertical|right"
+            android:paddingLeft="@dimen/space_15dp"
+            android:text="2021-5-13  1:58:00" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

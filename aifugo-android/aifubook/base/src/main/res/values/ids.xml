@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="attraction_detail_expandable_text" type="id" />
+    <item name="attraction_detail_expand_collapse" type="id" />
+    <item name="statusbarutil_fake_status_bar_view" type="id" />
+    <item name="statusbarutil_translucent_view" type="id" />
+
+
+    <item name="id_stickynavlayout_topview" type="id" />
+    <item name="id_stickynavlayout_viewpager" type="id" />
+    <item name="id_stickynavlayout_indicator" type="id" />
+    <item name="id_stickynavlayout_innerscrollview" type="id" />
+
+
+    <item name="viewpager_inner" type="id" />
+
+    <!--zxing-->
+    <item name="bgaqrcode_camera_preview" type="id" />
+
+    <item name="bannerContainer" type="id" />
+    <item name="bannerViewPager" type="id" />
+    <item name="circleIndicator" type="id" />
+    <item name="numIndicator" type="id" />
+    <item name="titleView" type="id" />
+    <item name="bannerTitle" type="id" />
+    <item name="numIndicatorInside" type="id" />
+    <item name="indicatorInside" type="id" />
+    <item name="bannerDefaultImage" type="id" />
+    <item name="bannerArcView" type="id" />
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_color_F8F8F8"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_titlebar_theme_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_45dp"
+        android:layout_marginTop="@dimen/space_10dp"
+        android:layout_marginRight="@dimen/space_15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextSize_14_Color_Black_threes"
+            android:layout_width="@dimen/space_100dp"
+            android:paddingLeft="@dimen/space_15dp"
+            android:text="邮箱" />
+
+        <EditText
+            android:id="@+id/et_Phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入邮箱"
+            android:paddingLeft="@dimen/space_10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray1"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Nexts"
+        style="@style/TextSize_14_Color_Black_threes"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_45dp"
+        android:layout_marginLeft="@dimen/space_30dp"
+        android:layout_marginTop="@dimen/space_30dp"
+        android:layout_marginRight="@dimen/space_30dp"
+        android:background="@drawable/homepage_theme_ra_45"
+        android:gravity="center"
+        android:text="修改"
+        android:textColor="@color/white" />
+
+</LinearLayout>

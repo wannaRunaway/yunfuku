@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_color_F8F8F8"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_80dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_80dp"
+            android:background="@drawable/homepage_theme" />
+
+        <include layout="@layout/view_titlebar_theme_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_150dp"
+            android:layout_marginLeft="@dimen/space_15dp"
+            android:layout_marginTop="@dimen/space_10dp"
+            android:layout_marginRight="@dimen/space_15dp"
+            android:background="@mipmap/recharbg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/space_20dp"
+            android:paddingBottom="@dimen/space_20dp">
+
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_3dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_10dp"
+                android:text="账户总额（元）"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_12sp" />
+
+            <TextView
+                android:id="@+id/tv_recharge"
+                android:layout_width="@dimen/space_100dp"
+                android:layout_height="27dp"
+                android:background="@drawable/shape_white_10dp_tran"
+                android:gravity="center"
+                android:text="充值"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_15sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="@dimen/space_45dp"
+            android:layout_height="@dimen/space_25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/space_25dp"
+            android:layout_marginRight="@dimen/space_15dp"
+            android:background="@drawable/shape_black_left_rules"
+            android:gravity="center"
+            android:text="规则"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_12sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_rechargeRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_rechargeRecord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_3dp"
+                    android:text="充值记录"
+                    android:textColor="#FC5739"
+                    android:textSize="@dimen/font_size_14sp" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="@dimen/space_20dp"
+                    android:layout_height="2dp"
+                    android:background="#FC5739" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_expenseCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_expenseCalendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_3dp"
+                    android:text="消费记录"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/font_size_14sp" />
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="@dimen/space_20dp"
+                    android:layout_height="2dp"
+                    android:background="#FC5739"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_0.5dp"
+            android:layout_marginBottom="@dimen/space_10dp"
+            android:background="@color/eeeeee" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corner_grayline_white_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Take_picture"
+        android:id="@+id/take_pic_text"
+        android:paddingLeft="@dimen/left_margin"
+        android:paddingBottom="18dp"
+        android:gravity="center"
+        android:paddingTop="18dp"
+        android:textSize="@dimen/title_textsize"
+        android:textColor="@color/title_text_color"/>
+    <ImageView
+        style="@style/common_line_style"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Select_from_the_album"
+        android:id="@+id/choose_pic_text"
+        android:gravity="center"
+        android:paddingLeft="@dimen/left_margin"
+        android:paddingBottom="18dp"
+        android:paddingTop="18dp"
+        android:textSize="@dimen/title_textsize"
+        android:textColor="@color/title_text_color"/>
+    <ImageView
+        style="@style/common_line_style"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Cancle"
+        android:id="@+id/cancle"
+        android:paddingLeft="@dimen/left_margin"
+        android:paddingBottom="18dp"
+        android:paddingTop="18dp"
+        android:textSize="@dimen/title_textsize"
+        android:textColor="@color/title_text_color"
+        android:gravity="center_horizontal"/>
+</LinearLayout>

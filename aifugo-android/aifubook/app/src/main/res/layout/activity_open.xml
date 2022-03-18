@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/openview" />
+
+
+    <RelativeLayout
+        android:id="@+id/firstShow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.6"
+            android:background="@color/black_threes"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/space_40dp"
+            android:layout_marginRight="@dimen/space_40dp"
+            android:background="@drawable/shape_white_10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space_10dp"
+                android:text="欢迎使用云辅库"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="@dimen/font_size_18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_20dp"
+                android:layout_marginTop="@dimen/space_10dp"
+                android:text="尊敬的用户，您好："
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="@dimen/font_size_18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_20dp"
+                android:layout_marginTop="@dimen/space_5dp"
+                android:layout_marginRight="@dimen/space_20dp"
+                android:textColor="@color/black"
+                android:text="为了加强对您个人信息的保护，根据最新法律要求，我们跟新系列隐私政策，请您仔细阅读并确认:"
+                android:textFontWeight="600"
+                android:textSize="@dimen/font_size_14sp" />
+
+            <TextView
+                android:id="@+id/Services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/space_20dp"
+                android:layout_marginRight="@dimen/space_20dp"
+                android:text="《云辅库平台服务协议》"
+                android:textColor="@color/theme_color"
+                android:textFontWeight="600"
+                android:textSize="@dimen/font_size_14sp" />
+
+            <TextView
+                android:id="@+id/Selfs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/space_20dp"
+                android:layout_marginTop="@dimen/space_5dp"
+                android:layout_marginRight="@dimen/space_20dp"
+                android:text="《云辅库隐私权相关政策》"
+                android:textColor="@color/theme_color"
+                android:textFontWeight="600"
+                android:textSize="@dimen/font_size_14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_20dp"
+                android:layout_marginTop="@dimen/space_5dp"
+                android:layout_marginRight="@dimen/space_20dp"
+                android:textColor="@color/black"
+                android:text="我们将严格按照政策内容使用和保护您的个人信息，为您提供更好的服务，感谢您的信任。"
+                android:textFontWeight="600"
+                android:textSize="@dimen/font_size_14sp" />
+
+            <TextView
+                android:id="@+id/Ager"
+                android:layout_width="@dimen/space_100dp"
+                android:layout_height="@dimen/space_30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space_20dp"
+                android:background="@drawable/homepage_theme_ra_45"
+                android:gravity="center"
+                android:text="同意"
+                android:textColor="@color/white"
+                android:textFontWeight="600"
+                android:textSize="@dimen/font_size_15sp" />
+
+            <TextView
+                android:id="@+id/dotAger"
+                android:layout_width="@dimen/space_100dp"
+                android:layout_height="@dimen/space_30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space_15dp"
+                android:layout_marginBottom="@dimen/space_30dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="不同意"
+                android:textFontWeight="600"
+                android:textSize="@dimen/font_size_15sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

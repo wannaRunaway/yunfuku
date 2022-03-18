@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_color_F8F8F8"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/view_titlebar_theme_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_30dp"
+            android:layout_marginLeft="@dimen/space_20dp"
+            android:layout_marginRight="@dimen/space_20dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_type"
+            android:drawableLeft="@mipmap/search_color"
+            android:drawablePadding="@dimen/space_10dp"
+            android:hint="搜索商品"
+            android:paddingLeft="@dimen/space_15dp"
+            android:textColorHint="@color/gray2"
+            android:textSize="@dimen/font_size_13sp" />
+
+        <TextView
+            style="@style/TextSize_15_Color_Black_threes"
+            android:layout_marginRight="@dimen/space_20dp"
+            android:text="取消" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Linear_H"
+        android:layout_marginTop="@dimen/space_20dp"
+        android:gravity="center">
+
+        <TextView
+            style="@style/TextSize_14_Color_Black_threes"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="综合"
+            android:textFontWeight="500" />
+
+        <TextView
+            style="@style/TextSize_14_Color_Black_threes"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="销量"
+            android:textFontWeight="500" />
+
+        <TextView
+            style="@style/TextSize_14_Color_Black_threes"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="价格"
+            android:textFontWeight="500" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+<!--    <include-->
+    <!--        layout="@layout/product_item"-->
+    <!--        android:elevation="@dimen/space_15dp" />-->
+
+
+</LinearLayout>

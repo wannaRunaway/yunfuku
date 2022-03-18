@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/shop_imageview"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="@dimen/space_12dp" />
+
+    <TextView
+        android:id="@+id/price_single_textview"
+        style="@style/text_14sp_black_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/shop_imageview"
+        android:layout_alignParentEnd="true"
+        android:text="¥2000.00" />
+
+    <TextView
+        android:id="@+id/book_count"
+        style="@style/text_14sp_999999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price_single_textview"
+        android:layout_alignEnd="@+id/price_single_textview"
+        android:layout_marginTop="3dp"
+        android:text="x0" />
+
+    <TextView
+        android:id="@+id/book_name"
+        style="@style/text_14sp_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/shop_imageview"
+        android:layout_marginStart="@dimen/space_12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@+id/price_single_textview"
+        android:layout_toEndOf="@+id/shop_imageview"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="2020版《状元语文笔记》三 奥我到我的我熬到哦年级语文上册北师版aasdasdasd" />
+
+    <TextView
+        android:id="@+id/rebound_status"
+        style="@style/text_14sp_black"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/shop_imageview"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/stroke_5radis_black"
+        android:gravity="center"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:text="退款成功" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/shop_imageview"
+        android:layout_marginTop="12dp"
+        android:background="@color/eeeeee" />
+</RelativeLayout>

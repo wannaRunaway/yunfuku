@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/space_16dp"
+    android:paddingRight="@dimen/space_16dp"
+    android:paddingTop="@dimen/space_16dp"
+    android:id="@+id/parent"
+    >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="推荐购买"
+        style="@style/text_15sp_black"
+        app:layout_constraintTop_toTopOf="@+id/parent"
+        app:layout_constraintStart_toStartOf="@+id/parent" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间"
+        style="@style/text_13sp_black"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        android:layout_marginTop="9dp"/>
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+00"
+        style="@style/text_16sp_red_bold"
+        app:layout_constraintTop_toTopOf="@+id/parent"
+        app:layout_constraintBottom_toBottomOf="@+id/parent"
+        app:layout_constraintEnd_toEndOf="@+id/parent"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#EEEEEE"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time"
+        android:layout_marginTop="@dimen/space_16dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

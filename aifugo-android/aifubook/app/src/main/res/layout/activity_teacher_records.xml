@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.teacher.TeacherFreeBookActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/white"
+    >
+
+    <View
+        android:id="@+id/image_header"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:background="@color/red_F7553B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/include_header"
+        layout="@layout/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editText_input"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="@dimen/space_15dp"
+        android:layout_marginRight="@dimen/space_15dp"
+        android:background="@drawable/drawable_edittext_corner15_white"
+        android:layout_below="@id/include_header"
+        android:hint="请输入你想搜索的商品"
+        style="@style/text_14sp_black"
+        android:paddingLeft="34dp"
+        />
+
+    <ImageView
+        android:id="@+id/image_search"
+        android:layout_width="@dimen/space_18dp"
+        android:layout_height="@dimen/space_18dp"
+        android:layout_below="@+id/include_header"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/space_5dp"
+        android:layout_marginEnd="@dimen/space_30dp"
+        android:src="@mipmap/icon_seach_black" />
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/smartrefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/image_header"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+</RelativeLayout>

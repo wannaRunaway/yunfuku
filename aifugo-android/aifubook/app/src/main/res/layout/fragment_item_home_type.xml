@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+    <TextView
+        android:minWidth="@dimen/space_60dp"
+        android:id="@+id/Names"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        style="@style/TextSize_12_Color_Black_threes" />
+    <View
+        android:id="@+id/NameLine"
+        android:visibility="gone"
+        android:background="@color/view_color_FC5739"
+        android:layout_width="@dimen/space_30dp"
+        android:layout_height="@dimen/space_2dp" />
+
+
+</LinearLayout>

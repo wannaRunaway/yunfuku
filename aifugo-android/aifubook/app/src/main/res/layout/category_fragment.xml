@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".category.CategoryFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/re"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_30dp"
+        android:layout_marginLeft="@dimen/space_15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="@dimen/space_15dp"
+        android:background="@drawable/drawable_edittext_corner15_red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView_grade_include"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_12dp"
+            android:drawableRight="@mipmap/arrow_down_black"
+            android:drawablePadding="@dimen/space_6dp"
+            android:text="年级"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/re"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="@dimen/space_1dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:background="@color/black_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/textview_search"
+            app:layout_constraintLeft_toRightOf="@+id/textView_grade_include"
+            app:layout_constraintTop_toTopOf="@+id/textview_search" />
+
+        <TextView
+            android:id="@+id/textview_search"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/space_28dp"
+            android:layout_marginTop="@dimen/space_1dp"
+            android:background="@drawable/shape_white_10dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView_search_include"
+            app:layout_constraintStart_toEndOf="@+id/view1"
+            android:gravity="center_vertical"
+            android:hint="请输入您需要查找的名称"
+            android:paddingLeft="13dp"
+            android:textSize="@dimen/font_size_14sp"
+            app:layout_constraintTop_toTopOf="@+id/re" />
+
+        <ImageView
+            android:id="@+id/imageView_search_include"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/re"
+            app:layout_constraintEnd_toEndOf="@+id/re"
+            app:layout_constraintTop_toTopOf="@+id/re"
+            android:layout_marginEnd="15dp"
+            android:src="@mipmap/imageview_search_red" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_category"
+        android:layout_width="@dimen/space_80dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/gray_F5F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/re" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_subject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recyclerview_category"
+        app:layout_constraintTop_toBottomOf="@+id/re"
+        android:layout_marginStart="8dp"
+        />
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/smartrefresh"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recyclerview_category"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView_subject">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_products"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

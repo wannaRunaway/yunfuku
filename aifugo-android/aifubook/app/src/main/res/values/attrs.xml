@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--MainNavigateTabBar-->
+    <declare-styleable name="MainNavigateTabBar">
+        <attr name="navigateTabTextColor" format="color|reference" />
+        <attr name="navigateTabSelectedTextColor" format="color|reference" />
+        <attr name="containerId" format="integer|reference" />
+        <attr name="navigateTabTextSize" format="dimension|reference" />
+    </declare-styleable>
+
+
+    <!--MaterialRatingBar-->
+    <declare-styleable name="MaterialRatingBar">
+        <attr name="mrb_progressTint" format="color|reference" />
+        <attr name="mrb_progressTintMode" format="enum">
+            <enum name="src_over" value="3" />
+            <enum name="src_in" value="5" />
+            <enum name="src_atop" value="9" />
+            <enum name="multiply" value="14" />
+            <enum name="screen" value="15" />
+            <enum name="add" value="16" />
+        </attr>
+        <attr name="mrb_secondaryProgressTint" format="color|reference" />
+        <attr name="mrb_secondaryProgressTintMode" format="enum">
+            <enum name="src_over" value="3" />
+            <enum name="src_in" value="5" />
+            <enum name="src_atop" value="9" />
+            <enum name="multiply" value="14" />
+            <enum name="screen" value="15" />
+            <enum name="add" value="16" />
+        </attr>
+        <attr name="mrb_progressBackgroundTint" format="color|reference" />
+        <attr name="mrb_progressBackgroundTintMode" format="enum">
+            <enum name="src_over" value="3" />
+            <enum name="src_in" value="5" />
+            <enum name="src_atop" value="9" />
+            <enum name="multiply" value="14" />
+            <enum name="screen" value="15" />
+            <enum name="add" value="16" />
+        </attr>
+        <attr name="mrb_indeterminateTint" format="color|reference" />
+        <attr name="mrb_indeterminateTintMode" format="enum">
+            <enum name="src_over" value="3" />
+            <enum name="src_in" value="5" />
+            <enum name="src_atop" value="9" />
+            <enum name="multiply" value="14" />
+            <enum name="screen" value="15" />
+            <enum name="add" value="16" />
+        </attr>
+    </declare-styleable>
+
+    <!--FlowLayout-->
+    <declare-styleable name="TagFlowLayout">
+        <attr name="max_select" format="integer"></attr>
+        <attr name="tag_gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CrescentoImageView">
+        <attr name="curvature" format="dimension" />
+        <attr name="gravity" format="integer">
+            <flag name="top" value="0" />
+            <flag name="bottom" value="1" />
+        </attr>
+        <attr name="curvatureDirection" format="integer">
+            <flag name="outward" value="0" />
+            <flag name="inward" value="1" />
+        </attr>
+        <attr name="crescentoTintMode" format="integer">
+            <flag name="automatic" value="0" />
+            <flag name="manual" value="1" />
+        </attr>
+        <attr name="crescentoTintColor" format="color" />
+        <attr name="crescentoTintAlpha" format="integer" />
+        <attr name="gradientDirection" format="integer">
+            <flag name="top_to_bottom" value="0" />
+            <flag name="bottom_to_top" value="1" />
+            <flag name="left_to_right" value="2" />
+            <flag name="right_to_left" value="3" />
+        </attr>
+        <attr name="gradientStartColor" format="color" />
+        <attr name="gradientEndColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RippleLayout">
+        <attr name="color" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="radius" format="dimension" />
+        <attr name="duration" format="integer" />
+        <attr name="rippleNums" format="integer" />
+        <attr name="scale" format="float" />
+    </declare-styleable>
+
+
+    <item name="empty_image" type="id" />
+    <item name="empty_text" type="id" />
+
+    <item name="error_image" type="id" />
+    <item name="error_text" type="id" />
+    <item name="retry_button" type="id" />
+
+    <attr name="styleLoadingLayout" format="reference" />
+
+    <style name="LoadingLayout"></style>
+
+    <style name="LoadingLayout.Style">
+        <!--<item name="llEmptyResId">@layout/view_loading_layout_empty</item>-->
+        <!--<item name="llErrorResId">@layout/view_loading_layout_error</item>-->
+
+        <item name="llTextColor">#999999</item>
+        <item name="llTextSize">16sp</item>
+
+        <item name="llButtonTextColor">#999999</item>
+        <item name="llButtonTextSize">@dimen/font_size_16sp</item>
+        <!--<item name="llButtonBackground">@drawable/loading_layout_button</item>-->
+
+        <item name="llEmptyImage">@null</item>
+        <item name="llEmptyText">暂无数据</item>
+        <item name="llErrorImage">@null</item>
+        <item name="llErrorText">数据加载失败...</item>
+        <item name="llRetryText">加载失败，点击重试~~</item>
+    </style>
+
+
+    <declare-styleable name="LoadingLayout">
+        <!-- 空布局资源id -->
+        <attr name="llEmptyResId" format="reference" />
+        <!-- 加载中布局资源id -->
+        <attr name="llLoadingResId" format="reference" />
+        <!-- 错误布局资源id -->
+        <attr name="llErrorResId" format="reference" />
+
+        <!-- 空布局图片 -->
+        <attr name="llEmptyImage" format="reference" />
+        <!-- 空布局文本 -->
+        <attr name="llEmptyText" format="string" />
+
+        <!-- 错误布局图片 -->
+        <attr name="llErrorImage" format="reference" />
+        <!-- 错误布局文本 -->
+        <attr name="llErrorText" format="string" />
+        <!-- 错误布局重试按钮文本 -->
+        <attr name="llRetryText" format="string" />
+
+        <!-- 文本颜色 -->
+        <attr name="llTextColor" format="color" />
+        <!-- 文本尺寸 -->
+        <attr name="llTextSize" format="dimension" />
+
+        <!-- 按钮文本颜色 -->
+        <attr name="llButtonTextColor" format="color" />
+        <!-- 按钮文本尺寸 -->
+        <attr name="llButtonTextSize" format="dimension" />
+        <!-- 按钮背景 -->
+        <attr name="llButtonBackground" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="Passwordinputview">
+        <attr name="passwordLength" format="integer" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="borderRadius" format="dimension" />
+        <attr name="borderColor" format="color" />
+        <attr name="passwordWidth" format="dimension" />
+        <attr name="passwordColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ArrowTextView">
+        <attr name="radiusw" format="dimension" />
+        <attr name="arrowWidth" format="dimension" />
+        <attr name="arrowHeight" format="dimension" />
+        <attr name="bg" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="StarRatingView">
+        <!--星星点亮-->
+        <attr name="stat_on" format="reference"></attr>
+        <!--星星关闭-->
+        <attr name="stat_off" format="reference"></attr>
+        <!--半颗星星-->
+        <attr name="stat_half" format="reference"></attr>
+        <!--是否可以点击滑动评分-->
+        <attr name="ratable" format="boolean"></attr>
+        <!--星星之间间距-->
+        <attr name="star_padding" format="dimension"></attr>
+    </declare-styleable>
+
+    <!-- di add -->
+    <declare-styleable name="underlineTextView">
+        <attr name="undercover" format="color" />
+        <attr name="show" format="boolean"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Base</string>
+    <string name="cancle">取消</string>
+    <string name="accpet">确认</string>
+    <string name="loading">请稍后</string>
+    <string name="no_net">网络不可用,请检查你的网络</string>
+    <string name="have_net">网络连接已恢复正常</string>
+    <string name="service_error">服务器访问出错</string>
+    <string name="net_error">请检查你的网络</string>
+    <string name="setting">设置</string>
+    <string name="receive_fc">请求获取对应权限,是打开权限?</string>
+    <string name="receive_read_sd">当前缺少SD卡读写权限,是打开权限?</string>
+    <string name="receive_camera">当前缺少相机权限,是打开权限?</string>
+    <string name="fial">获取权限失败,可能不能进行下一步操作</string>
+    <string name="prompt_we_need_ps">获取权限失败,可能不能进行下一步操作,请手动设置相关权限以使我们能够更好的为您服务.</string>
+
+    <!--刷新-->
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="pull_loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+
+    <!--photo-->
+
+    <string name="__picker_title">图片选择</string>
+    <string name="__picker_delete">删除</string>
+    <string name="__picker_done">完成</string>
+    <string name="__picker_done_with_count">完成(%1$d/%2$d)</string>
+    <string name="__picker_image_index">%1$d/%2$d</string>
+    <string name="__picker_undo">撤消</string>
+    <string name="__picker_deleted_a_photo">删除了一张图片</string>
+    <string name="__picker_confirm_to_delete">确认删除？</string>
+    <string name="__picker_yes">确定</string>
+    <string name="__picker_cancel">取消</string>
+    <string name="__picker_all_image">所有图片</string>
+    <string name="__picker_over_max_count_tips">你最多可以选择%1$d张图片</string>
+    <string name="__picker_image_count">%1$d张</string>
+
+    <string name="__picker_preview">预览</string>
+
+
+    <string name="save_picture">保存图片</string>
+    <string name="save_picture_failed">保存失败</string>
+    <string name="save_picture_success">图片成功保存至%s目录 </string>
+
+    <string name="msg_code">短信验证码</string>
+
+    <string name="one_more_exit_application">再次点击退出</string>
+    <string name="Download_pictures">Download pictures</string>
+    <string name="Save_pictures">Save pictures</string>
+    <string name="Saved_to_System_Album">Saved to System Album</string>
+    <string name="skip">skip</string>
+    <string name="Take_picture">相机</string>
+    <string name="Select_from_the_album">相册</string>
+
+    <string name="Cancle">取消</string>
+    <string name="Confirm">确认</string>
+
+    <string name="network_is_exception">网络异常</string>
+    <string name="network_connection_is_out_of_time">网络超时，请稍后再试</string>
+    <string name="Select_country_or_region">Select country or region</string>
+    <string name="submit">Submit</string>
+    <string name="The_system_is_under_maintenance_and_will_be_back_soon">The system is under maintenance and will be back soon. </string>
+    <string name="no_data">No data</string>
+
+    <string name="Network_error_please_check_the_network">Network error, please check the network</string>
+    <string name="Server_error_click_retry">Server error, click retry</string>
+    <string name="server_unknown_error">Server unknown error</string>
+    <string name="btn_cancel">取消</string>
+    <string name="back">返回</string>
+    <string name="resend">重新发送</string>
+    <string name="copied">已复制</string>
+    <string name="web_link_is_error">Web url is error</string>
+    <string name="phone_number">手机号</string>
+    <string name="set_pwd">设置密码</string>
+    <string name="send">发送</string>
+    <string name="create_account">注册</string>
+    <string name="password">密码</string>
+    <string name="sign_in">登录</string>
+    <string name="forget_pwd">忘记密码？</string>
+    <string name="reset_pwd">重置密码</string>
+    <string name="new_pwd">新密码</string>
+    <string name="recharge_failure">充值失败</string>
+    <string name="account_balance">账户余额</string>
+    <string name="look_more">查看更多</string>
+    <string name="recent">最近</string>
+    <string name="history_memory">最近记录</string>
+
+</resources>

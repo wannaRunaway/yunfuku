@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/view_titlebar_theme_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_15dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_40dp"
+            android:layout_marginLeft="@dimen/space_20dp"
+            android:layout_marginRight="@dimen/space_20dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_type"
+            android:drawableLeft="@mipmap/icon_search"
+            android:drawablePadding="@dimen/space_10dp"
+            android:hint="请输入商品名称"
+            android:paddingLeft="@dimen/space_15dp"
+            android:singleLine="true"
+            android:textSize="@dimen/font_size_13sp" />
+
+        <TextView
+            android:id="@+id/Search"
+            style="@style/TextSize_15_Color_Black_threes"
+            android:layout_marginRight="@dimen/space_20dp"
+            android:text="搜索" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/product_item"
+        android:elevation="@dimen/space_15dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_20dp"
+        android:layout_marginTop="@dimen/space_20dp"
+        android:text="历史搜索"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/cg_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:animateLayoutChanges="true"
+        app:chipSpacing="10dp"
+        app:singleSelection="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="热门搜索"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/cg_hot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:animateLayoutChanges="true"
+        app:chipSpacing="10dp"
+        app:singleSelection="true" />
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_10dp"
+        android:layout_marginRight="@dimen/space_15dp"
+        android:layout_marginLeft="@dimen/space_15dp"
+        android:layout_height="@dimen/space_90dp"
+        android:background="@drawable/shape_white_10dp"
+        style="@style/Linear_H">
+
+        <ImageView
+            android:id="@+id/addressImageView"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="@dimen/space_15dp"
+            android:layout_width="@dimen/space_55dp"
+            android:layout_height="@dimen/space_55dp" />
+
+        <RelativeLayout
+            android:paddingLeft="@dimen/space_10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:text="新华书店-北门"
+                style="@style/TextSize_14_Color_Black_threes" />
+
+            <TextView
+                android:drawablePadding="@dimen/space_5dp"
+                android:id="@+id/details_tv"
+                android:layout_marginTop="@dimen/space_5dp"
+                android:textColor="@color/gray1"
+                android:layout_below="@+id/tv_address"
+                android:drawableLeft="@mipmap/location_big"
+                style="@style/TextSize_12_Color_Black_threes" />
+
+            <TextView
+                android:id="@+id/addressTextView"
+                android:layout_marginTop="@dimen/space_5dp"
+                android:textColor="@color/F95435"
+                android:layout_below="@+id/details_tv"
+                style="@style/TextSize_12_Color_Black_threes" />
+
+            <TextView
+                android:id="@+id/addressSelect"
+                android:layout_width="@dimen/space_60dp"
+                android:layout_height="@dimen/space_25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-5dp"
+                android:layout_marginRight="@dimen/space_15dp"
+                android:background="@drawable/homepage_theme_ra_45"
+                android:gravity="center"
+                android:text="选这里"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space_12dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="4dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/Names"
+        style="@style/TextSize_14_Color_Black_threes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="一年级"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/iv_arrow_select" />
+
+    <View
+        android:id="@+id/NameLine"
+        android:layout_width="@dimen/space_30dp"
+        android:layout_height="@dimen/space_2dp"
+        android:background="@color/view_color_FC5739"
+        android:visibility="gone" />
+
+
+</LinearLayout>

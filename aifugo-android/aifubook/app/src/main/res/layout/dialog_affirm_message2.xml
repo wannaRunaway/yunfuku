@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="@dimen/space_280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/dialog_bg_specifications"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_15dp"
+                android:layout_marginBottom="@dimen/space_16dp"
+                android:text="去核销"
+                android:textColor="@color/black_three"
+                android:textSize="@dimen/font_size_14sp" />
+
+            <EditText
+                android:id="@+id/message_view"
+                android:layout_width="@dimen/space_100dp"
+                android:layout_height="@dimen/space_40dp"
+                android:layout_weight="1"
+                android:background="@color/gray3"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:hint="请输入"
+                android:singleLine="true"
+                android:textColor="@color/black_three"
+                android:textSize="@dimen/font_size_14sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_32dp"
+                android:layout_marginTop="@dimen/space_15dp"
+                android:layout_marginBottom="@dimen/space_15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dialog_cancel_btn"
+                    android:layout_width="105dp"
+                    android:layout_height="@dimen/space_32dp"
+                    android:layout_marginRight="@dimen/space_15dp"
+                    android:background="@drawable/shape_d8d8d8_order_dialog"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_14sp" />
+
+                <TextView
+                    android:id="@+id/dialog_affirm_btn"
+                    android:layout_width="105dp"
+                    android:layout_height="@dimen/space_32dp"
+                    android:background="@drawable/shape_order_dialog"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

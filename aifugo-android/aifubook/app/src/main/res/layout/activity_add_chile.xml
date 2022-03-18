@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_titlebar_theme_color" />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_height="@dimen/space_55dp"
+        style="@style/Linear_H">
+
+        <TextView
+            android:gravity="center"
+            android:text="*"
+            android:textColor="@color/red"
+            android:layout_width="@dimen/space_20dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="孩子姓名"
+            android:layout_width="@dimen/space_80dp"
+            style="@style/TextSize_14_Color_Black_threes" />
+
+        <EditText
+            android:id="@+id/SelectName"
+            android:textColorHint="@color/gray1"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:hint="请填写姓名"
+            style="@style/TextSize_14_Color_Black_threes" />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/view_color_F8F8F8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0.5dp" />
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_height="@dimen/space_55dp"
+        style="@style/Linear_H">
+
+        <TextView
+            android:gravity="center"
+            android:text="*"
+            android:textColor="@color/red"
+            android:layout_width="@dimen/space_20dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="年齡"
+            android:layout_width="@dimen/space_80dp"
+            style="@style/TextSize_14_Color_Black_threes" />
+
+        <TextView
+            android:drawableRight="@mipmap/ic_chevron_right_black_24dp"
+            android:id="@+id/SelectAge"
+            android:layout_height="match_parent"
+            android:textColorHint="@color/gray1"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:text="请选择年龄"
+            style="@style/TextSize_14_Color_Black_threes" />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/view_color_F8F8F8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0.5dp" />
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_height="@dimen/space_55dp"
+        style="@style/Linear_H">
+
+        <TextView
+            android:gravity="center"
+            android:text="*"
+            android:textColor="@color/red"
+            android:layout_width="@dimen/space_20dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="性別"
+            android:layout_width="@dimen/space_80dp"
+            style="@style/TextSize_14_Color_Black_threes" />
+
+        <TextView
+            android:textColorHint="@color/gray1"
+            android:drawableRight="@mipmap/ic_chevron_right_black_24dp"
+            android:id="@+id/SelectSex"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:text="请选择性别"
+            style="@style/TextSize_14_Color_Black_threes" />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/view_color_F8F8F8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0.5dp" />
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_height="@dimen/space_55dp"
+        style="@style/Linear_H">
+
+        <TextView
+            android:gravity="center"
+            android:text="*"
+            android:textColor="@color/red"
+            android:layout_width="@dimen/space_20dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="所在区域"
+            android:layout_width="@dimen/space_80dp"
+            style="@style/TextSize_14_Color_Black_threes" />
+
+        <TextView
+            android:textColorHint="@color/gray1"
+            android:id="@+id/SelectAddress"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/ic_chevron_right_black_24dp"
+            android:layout_height="match_parent"
+            android:text="请选择所在区域"
+            style="@style/TextSize_14_Color_Black_threes" />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/view_color_F8F8F8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0.5dp" />
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_height="@dimen/space_55dp"
+        style="@style/Linear_H">
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:layout_width="@dimen/space_20dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="学校"
+            android:layout_width="@dimen/space_80dp"
+            style="@style/TextSize_14_Color_Black_threes" />
+
+        <TextView
+            android:textColorHint="@color/gray1"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:id="@+id/SelectSchool"
+            android:drawableRight="@mipmap/ic_chevron_right_black_24dp"
+            android:layout_height="match_parent"
+            android:text="请选择学校"
+            style="@style/TextSize_14_Color_Black_threes" />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/view_color_F8F8F8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0.5dp" />
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_height="@dimen/space_55dp"
+        style="@style/Linear_H">
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:layout_width="@dimen/space_20dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="班级"
+            android:layout_width="@dimen/space_80dp"
+            style="@style/TextSize_14_Color_Black_threes" />
+
+        <TextView
+            android:textColorHint="@color/gray1"
+            android:background="@color/white"
+            android:id="@+id/SelectClass"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:drawableRight="@mipmap/ic_chevron_right_black_24dp"
+            android:text="请选择班级"
+            style="@style/TextSize_14_Color_Black_threes" />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/view_color_F8F8F8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0.5dp" />
+
+    <View
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/addChil"
+        android:gravity="center"
+        android:text="添加用户"
+        android:textColor="@color/white"
+        android:background="@drawable/homepage_theme"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/space_60dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50dp" />
+
+</LinearLayout>

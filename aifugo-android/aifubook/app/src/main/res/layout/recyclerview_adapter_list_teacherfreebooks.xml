@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="157dp"
+    android:paddingStart="14dp"
+    android:paddingTop="14dp"
+    android:paddingEnd="14dp">
+
+    <com.jiarui.base.fresco.CommonImage
+        android:id="@+id/imageView_header"
+        android:layout_width="123dp"
+        android:layout_height="123dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textview_get_already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/drawable_2dp_new_gray"
+        android:paddingLeft="@dimen/space_7dp"
+        android:paddingTop="@dimen/space_5dp"
+        android:paddingRight="@dimen/space_7dp"
+        android:paddingBottom="@dimen/space_5dp"
+        android:text="已领"
+        android:textColor="@color/white"
+        android:textSize="@dimen/space_13dp"
+        app:layout_constraintLeft_toLeftOf="@id/imageView_header"
+        app:layout_constraintTop_toTopOf="@id/imageView_header" />
+
+    <TextView
+        android:id="@+id/textView_book_name"
+        style="@style/text_14sp_black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:text="2020版《状元语文笔记》三年级语文上册北师版"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        android:maxLines="2"
+        android:ellipsize="end"
+        app:layout_constraintStart_toEndOf="@+id/imageView_header"
+        app:layout_constraintTop_toTopOf="@+id/imageView_header" />
+
+    <TextView
+        android:id="@+id/textview_book_info"
+        style="@style/text_12sp_999999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="三年级 / 语文 / 同步联系"
+        app:layout_constraintStart_toStartOf="@+id/textView_book_name"
+        app:layout_constraintTop_toBottomOf="@+id/textView_book_name" />
+
+    <TextView
+        android:id="@+id/textview_book_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¥ 0"
+        android:textColor="@color/red_F7553B"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_header"
+        app:layout_constraintStart_toStartOf="@+id/textView_book_name" />
+
+    <TextView
+        android:id="@+id/textview_book_price_before"
+        style="@style/text_12sp_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="¥38.24"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_header"
+        app:layout_constraintStart_toEndOf="@+id/textview_book_price" />
+
+    <TextView
+        android:id="@+id/textview_book_get"
+        style="@style/text_12sp_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/drawable_2dp_new_red"
+        android:paddingLeft="@dimen/space_7dp"
+        android:paddingTop="@dimen/space_5dp"
+        android:paddingRight="@dimen/space_7dp"
+        android:paddingBottom="@dimen/space_5dp"
+        android:text="0元领样"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_beans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="赚100粉豆"
+        style="@style/text_11sp_red"
+        android:background="@drawable/red4corner"
+        app:layout_constraintBottom_toTopOf="@+id/textview_book_price"
+        app:layout_constraintEnd_toEndOf="@+id/textview_book_price_before"
+        app:layout_constraintStart_toStartOf="@+id/textview_book_price"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="@dimen/_10dp"
+        android:paddingRight="@dimen/_10dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0.5dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="46dp"
+        android:background="#EAEAEA"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="42dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center">
+
+
+        <com.jiarui.base.fresco.CommonImage
+            android:id="@+id/cimage1"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            fresco:roundAsCircle="true"
+            fresco:viewAspectRatio="1" />
+
+
+        <TextView
+            android:id="@+id/tv_chief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_groupon_chief"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="团长"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="14dp"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

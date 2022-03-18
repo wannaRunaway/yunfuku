@@ -1,0 +1,55 @@
+ext {
+    //Android基本配置
+    android = [
+            compileSdkVersion = 31,
+            buildToolsVersion = '30.0.3',
+            minSdkVersion = 21,
+            targetSdkVersion = 30,
+            versionCode = 15,
+            versionName = "1.2.0",
+            testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+    ]
+    //第三方依赖
+    dependencies = [
+            //Butterknife注解
+            "butterknife"                : "com.jakewharton:butterknife:10.1.0",
+            "butterknife-compiler"       : "com.jakewharton:butterknife-compiler:10.1.0",
+            //网络请求
+            "retrofit"                   : "com.squareup.retrofit2:retrofit:2.1.0",
+            "fastjson"                   : "com.alibaba:fastjson:1.2.40",
+            "gson"                       : "org.immutables:gson:2.6.0.alpha0",
+            "okhttputils"                : "com.github.xxl6097:okhttputils:2.4.1",
+            //点击图片放大放小
+            "photoview"                  : "cn.bluemobi.dylan:photoview:1.4",
+            //通信
+            "eventbus"                   : "org.greenrobot:eventbus:3.1.1",
+            //加载图片
+            "glide"                      : "com.github.bumptech.glide:glide:4.11.0",
+            "compiler"                   : "com.github.bumptech.glide:compiler:4.11.0",
+            "okhttp3-integration"        : "com.github.bumptech.glide:okhttp3-integration:4.11.0",
+            //系统自带
+            "androidx-appcompat"         : 'androidx.appcompat:appcompat:1.0.0',
+            "support-v4"                 : 'androidx.legacy:legacy-support-v4:1.0.0',
+            "design"                     : 'com.google.android.material:material:1.0.0',
+            "recyclerview-v7"            : 'androidx.recyclerview:recyclerview:1.0.0',
+            "palette-v7"                 : 'androidx.palette:palette:1.0.0',
+            //RxJava-RxAndroid
+            "rxjava"                     : "io.reactivex.rxjava2:rxjava:2.0.5",
+            "rxandroid"                  : "io.reactivex.rxjava2:rxandroid:2.0.1",
+            "multidex"                   : "com.android.support:multidex:1.0.1",
+            //微信支付
+//            "wechat-sdk-android-with-mta": "com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+",
+            "wechat-sdk-android-with-mta": "com.tencent.mm.opensdk:wechat-sdk-android:+",
+            //时间选择器
+            "pickerView"                 : "com.contrarywind:Android-PickerView:4.1.8",
+
+            "charts"                     : "com.lixs.charts:charts:1.0.7",
+            "roundedImage"              : "com.makeramen:roundedimageview:2.3.0",
+            "tablayout"                  : "com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar",
+            //刷新加载
+//            "refresh"                    : "io.github.scwang90:refresh-layout-kernel:2.0.3",
+//            "refreshHeader"             : "io.github.scwang90:refresh-header-classics:2.0.3",
+//            "refreshFooter"             : "io.github.scwang90:refresh-footer-classics:2.0.3",
+//            "googleHeader"              : "io.github.scwang90:refresh-header-material:2.0.3"
+    ]
+}

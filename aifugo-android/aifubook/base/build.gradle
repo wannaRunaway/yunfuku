@@ -1,0 +1,106 @@
+apply plugin: 'com.android.library'
+
+android {
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        testInstrumentationRunner rootProject.ext.testInstrumentationRunner
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    lint {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    testImplementation 'junit:junit:4.13.2'
+    api rootProject.ext.dependencies["wechat-sdk-android-with-mta"]
+    //Butterknife注解
+    api rootProject.ext.dependencies.butterknife
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+    //网络请求
+    api rootProject.ext.dependencies.retrofit
+    api rootProject.ext.dependencies.fastjson
+    api rootProject.ext.dependencies.gson
+    api rootProject.ext.dependencies.okhttputils
+    /*api "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    api "com.squareup.retrofit2:adapter-rxjava:$rootProject.retrofitVersion"
+    api "com.squareup.retrofit2:adapter-rxjava2:$rootProject.retrofitVersion"
+    api "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+    api "com.squareup.retrofit2:converter-jaxb:$rootProject.retrofitVersion"
+    api "com.squareup.okhttp3:okhttp:$rootProject.okhttp3Version"
+    api "com.squareup.okio:okio:$rootProject.okioVersion"
+    api "com.squareup.retrofit2:retrofit-converters:$rootProject.retrofitVersion"
+    api "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttp3loggingVersion"
+
+    //rxJava
+    api "io.reactivex.rxjava2:rxandroid:$rootProject.rxandroidVersion"
+    api "io.reactivex.rxjava2:rxjava:$rootProject.rxjavaVersion"
+
+    //MultipleStatusView
+    api "com.classic.common:multiple-status-view:$rootProject.multiplestatusviewVersion"*/
+
+    //点击图片放大放小
+    api rootProject.ext.dependencies.photoview
+    //通信
+    api rootProject.ext.dependencies.eventbus
+    //加载图片
+    api 'com.facebook.fresco:fresco:2.6.0'
+    api 'com.facebook.fresco:animated-gif:1.0.1'
+//    implementation 'com.facebook.fresco:fresco:2.6.0'
+    api rootProject.ext.dependencies.glide
+    annotationProcessor rootProject.ext.dependencies.compiler
+    api rootProject.ext.dependencies["okhttp3-integration"]
+    //系统自带
+    api rootProject.ext.dependencies["androidx-appcompat"]
+    api rootProject.ext.dependencies["support-v4"]
+    api rootProject.ext.dependencies.design
+    api rootProject.ext.dependencies["recyclerview-v7"]
+    api rootProject.ext.dependencies["palette-v7"]
+//    api files('libs/BaiduLBS_Android.jar')
+    api files('libs/RxAndroid.jar')
+    implementation 'androidx.multidex:multidex:2.0.1'
+    //时间选择器
+    api rootProject.ext.dependencies.pickerView
+    api rootProject.ext.dependencies.roundedImage
+    api rootProject.ext.dependencies.tablayout
+    api 'com.google.android.material:material:1.5.0'
+    api "com.google.dagger:dagger:$rootProject.daggerVersion"
+    implementation "com.google.dagger:dagger-android:$rootProject.daggerVersion"
+    implementation "com.google.dagger:dagger-android-support:$rootProject.daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
+
+    // 友盟基础组件库（所有友盟业务SDK都依赖基础组件库）
+//    api 'com.umeng.umsdk:common:9.4.0'
+//    api 'com.umeng.umsdk:asms:1.2.3'
+    //错误分析
+//    api 'com.umeng.umsdk:apm:1.4.0'
+    //推送
+//    api 'com.umeng.umsdk:push:6.4.0'
+
+    api 'com.github.maning0303:MNUpdateAPK:V2.0.3'
+
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
+    //di codes
+//    api rootProject.ext.dependencies.refresh
+//    api rootProject.ext.dependencies.refreshHeader
+//    api rootProject.ext.dependencies.refreshFooter
+
+}

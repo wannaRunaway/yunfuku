@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiarui.base.rollviewpager.RollPagerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top_vp"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_100dp"
+    android:minHeight="@dimen/space_80dp"
+    app:rollviewpager_hint_gravity="center"
+    app:rollviewpager_hint_paddingBottom="@dimen/space_10dp" />

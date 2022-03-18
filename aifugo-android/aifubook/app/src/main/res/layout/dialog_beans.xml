@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:background="@drawable/shape_retange_16_white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/parent"
+        app:layout_constraintTop_toTopOf="@+id/content"
+        app:layout_constraintStart_toStartOf="@+id/content"
+        app:layout_constraintEnd_toEndOf="@+id/content"
+        android:background="@drawable/shape_retange_16_white"
+        android:paddingTop="@dimen/space_16dp"
+        android:paddingLeft="@dimen/space_16dp"
+        android:paddingRight="@dimen/space_16dp"
+        android:paddingBottom="@dimen/space_28dp"
+        >
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="兑换到零钱"
+        style="@style/text_16sp_black_bold"
+        app:layout_constraintStart_toStartOf="@+id/parent"
+        app:layout_constraintEnd_toEndOf="@+id/parent"
+        app:layout_constraintTop_toTopOf="@+id/parent"
+        android:layout_marginTop="@dimen/space_16dp"
+        />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="输入粉豆数"
+        style="@style/text_16sp_black_bold"
+        app:layout_constraintStart_toStartOf="@+id/parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        android:layout_marginTop="@dimen/space_20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="可兑粉豆"
+        app:layout_constraintEnd_toEndOf="@+id/parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tv2"
+        style="@style/text_12sp_black"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:id="@+id/ed_mybeans"
+        app:layout_constraintStart_toStartOf="@+id/parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        android:layout_marginTop="@dimen/space_12dp"
+        android:background="@drawable/edittext_corner4dp_999999"
+        android:inputType="number"
+        android:maxLength="6"
+        android:paddingLeft="@dimen/_10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_get_beans_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全部兑换"
+        style="@style/text_12sp_red"
+        app:layout_constraintEnd_toEndOf="@+id/parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_mybeans"
+        android:layout_marginTop="14dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/parent"
+        app:layout_constraintEnd_toEndOf="@+id/parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_get_beans_all"
+        android:layout_marginTop="23dp"
+        android:text="确定"
+        android:background="#FC595E"
+        style="@style/text_16sp_white_bold"
+        android:paddingLeft="@dimen/space_25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="@dimen/space_9dp"
+        android:paddingBottom="@dimen/space_9dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

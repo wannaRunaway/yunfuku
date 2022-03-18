@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.aifubook.book">
+    <!-- 安装Apk -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 通过GPS得到精确位置 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 通过网络得到粗略位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 访问网络. 某些位置信息需要从网络服务器获取 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 访问WiFi状态. 需要WiFi信息用于网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 修改WiFi状态. 发起WiFi扫描, 需要WiFi信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 访问网络状态, 检测网络的可用性. 需要网络运营商相关信息用于网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 访问网络的变化, 需要某些信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> <!-- 访问手机当前状态, 需要device id用于网络定位 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 访问蓝牙状态，需要蓝牙信息用于网络定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- 支持A-GPS辅助定位 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> <!-- 用于 log 日志 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" /> <!-- 硬件加速对X5视频播放非常重要，建议开启 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <queries>
+        <package android:name="com.tencent.mm" />
+        <!-- 正式环境 -->
+        <package android:name="com.eg.android.AlipayGphone" />
+        <!-- 沙箱环境 -->
+        <package android:name="com.eg.android.AlipayGphoneRC" />
+        <package android:name="hk.alipay.wallet" />
+    </queries>
+
+    <application
+        android:name=".application.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/BaseAppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:theme">
+        <activity
+            android:name=".mine.coupons.CouponsUnusedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.main.money.BindAliPayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.main.money.GetMoneyDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.main.money.TakeMoneyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.groupheader.RuleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.logistics.LogisticsDadaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".service.MyServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.customerservice.CustomerServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.logistics.LogisticsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.groupheader.GroupHeaderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.main.money.MoneyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.main.beans.BeansActivity"
+            android:exported="false" />
+        <activity
+            android:name=".login.CheckRoleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.main.shopdetail.ShopDetailListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.webview.TeacherWebviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.webview.TeacherCheckActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.teacherfreeproductsdetails.TeacherFreeBookProductsDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TeacherFreeBooksList.TeacherFreeBooksListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.check.CheckActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.teacherrecords.TeacherRecordsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.teacher.TeacherFreeBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".login.OpenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.main.MainActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".login.BindMobilePhoneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".login.RegisteredActivity"
+            android:exported="false" />
+        <activity
+            android:name=".login.LoginNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".product.ProductDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".order.MyOrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".order.ActivityAllOrdersList"
+            android:exported="false" />
+        <activity
+            android:name=".home.search.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home.product.ProductListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home.address.ShopListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".productcar.PayOkeyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mine.address.AddressListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home.shop.ShopDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mine.coupons.CouponsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mine.coupons.CouponRedemptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mine.wallet.MyWalletActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mine.address.CreatAddress"
+            android:exported="false" />
+        <activity
+            android:name=".regimental.EditorCenterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".productcar.trueorder.PayOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".scan.ScanQRActivity"
+            android:exported="false" /> <!-- 微信成功回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".classmanger.ClassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".regimental.HeadApplyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".regimental.ApplyWithdrawalsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".regimental.CancelVerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".regimental.HeadCenterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".regimental.TeamOrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".classmanger.addChileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".shoprequest.ShopRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mine.self.PersonalUpdataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mine.setting.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mine.setting.AcountMangerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mine.setting.PaySettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mine.setting.SettingPayPsdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mine.setting.PhoneSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mine.setting.EmailUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".regimental.MyTeamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".regimental.CommissionDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mine.ServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home.MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mine.setting.BackMessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mine.setting.PriviteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home.MapLineShowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".login.BindPhoneActivity"
+            android:exported="false" /> <!-- <activity android:name="com.aifubook.book.scan.ScanActivity" /> -->
+        <activity
+            android:name=".login.WriteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mine.share.ShareActivity"
+            android:exported="false" />
+        <activity
+            android:name=".order.RefundDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".order.RequestRefundActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".mine.order.ApplyAfterSales2Activity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".mine.setting.SafetyCenterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mine.setting.LogoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".shop.ShopHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".shop.ShopPicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".web.X5TbsFileServicePage"
+            android:exported="false" />
+        <activity
+            android:name=".productcar.ConfirmOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mine.setting.ModifyPhoneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".regimental.TeacherAreaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".regimental.ProductCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".shop.ShopCartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".product.ProductDetailsNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".groupon.GrouponActivity"
+            android:exported="false" />
+        <activity
+            android:name=".groupon.GrouponShareOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".groupon.GrouponPaySuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".groupon.GrouponOrderListActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="F2XBZ-6PGWS-NYROO-62NZL-AC666-ZOBXX" /> <!-- android:value="ZYCBZ-GSFK6-BXVSF-EUCBG-6NAU3-PQFCY" /> -->
+        <!-- umeng配置 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="60e7defea6f90557b7b05925" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="oppo" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.aifubook.book.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <provider
+            android:name=".activity.webview.WebviewCameraFileProvider"
+            android:authorities="com.aifubook.book.cameraprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public" />
+        </provider>
+
+        <service
+            android:name="com.tencent.smtt.export.external.DexClassLoaderProviderService"
+            android:exported="true"
+            android:label="dexopt"
+            android:process=":dexopt" />
+    </application>
+
+</manifest>

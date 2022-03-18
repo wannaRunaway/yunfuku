@@ -1,0 +1,3 @@
+include ':app', ":base", ':ucrop', ':picture_library',':zxing-android-embedded'
+rootProject.name='waibao'
+include ':dialog'

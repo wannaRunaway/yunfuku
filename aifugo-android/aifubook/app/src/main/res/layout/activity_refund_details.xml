@@ -1,0 +1,330 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_color_F8F8F8">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_f7553b" />
+
+    <RelativeLayout
+        android:id="@+id/re_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/request_changed_textview"
+            style="@style/text_16sp_white"
+            android:layout_width="88dp"
+            android:layout_height="@dimen/space_40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/space_5dp"
+            android:layout_marginEnd="@dimen/space_15dp"
+            android:layout_marginBottom="@dimen/space_5dp"
+            android:background="@drawable/red7553b_4corner"
+            android:gravity="center"
+            android:text="修改申请" />
+
+        <TextView
+            android:id="@+id/request_cancel_textview"
+            style="@style/text_16sp_black"
+            android:layout_width="88dp"
+            android:layout_height="@dimen/space_40dp"
+            android:layout_marginTop="@dimen/space_5dp"
+            android:layout_marginEnd="@dimen/space_15dp"
+            android:layout_marginBottom="@dimen/space_5dp"
+            android:layout_toLeftOf="@+id/request_changed_textview"
+            android:background="@drawable/corner4_stroke_black"
+            android:gravity="center"
+            android:text="撤销申请" />
+
+        <TextView
+            android:id="@+id/request_write_textview"
+            style="@style/text_16sp_black"
+            android:layout_width="88dp"
+            android:layout_height="@dimen/space_40dp"
+            android:layout_marginTop="@dimen/space_5dp"
+            android:layout_marginEnd="@dimen/space_15dp"
+            android:layout_marginBottom="@dimen/space_5dp"
+            android:layout_toLeftOf="@+id/request_cancel_textview"
+            android:background="@drawable/corner4_stroke_black"
+            android:gravity="center"
+            android:text="填写单号" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/re_bottom"
+        android:layout_below="@+id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/space_15dp"
+            android:paddingRight="@dimen/space_15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/shape_white_5dp"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/space_15dp"
+                android:paddingBottom="@dimen/space_15dp">
+
+                <ImageView
+                    android:id="@+id/header_imageview"
+                    android:layout_width="@dimen/space_60dp"
+                    android:layout_height="@dimen/space_60dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/service_success_image" />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    style="@style/text_18sp_bold_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/header_imageview"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/space_15dp"
+                    android:text="退款成功 ¥99.99" />
+
+                <TextView
+                    android:id="@+id/header_warning_textview"
+                    style="@style/text_14sp_999999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_status"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/space_11dp"
+                    android:text="系统已退回至原账户" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_paytype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_12dp"
+                android:background="@drawable/shape_white_5dp"
+                android:padding="@dimen/space_16dp">
+
+                <TextView
+                    android:id="@+id/backtype_textview"
+                    style="@style/text_14sp_black_333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="退回微信" />
+
+                <TextView
+                    android:id="@+id/money_textview"
+                    style="@style/text_14sp_black_333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="¥99" />
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv2"-->
+<!--                    style="@style/text_14sp_black_333333"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/tv1"-->
+<!--                    android:layout_marginTop="@dimen/space_15dp"-->
+<!--                    android:text="退回红包" />-->
+
+<!--                <TextView-->
+<!--                    style="@style/text_14sp_black_333333"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/money_textview"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_marginTop="@dimen/space_15dp"-->
+<!--                    android:text="¥0.01" />-->
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_12dp"
+                android:background="@drawable/shape_white_5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/shape_white_5dp"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_11dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/shop_name"
+                        style="@style/text_16sp_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/shopname_left"
+                        android:drawableRight="@mipmap/arrow_right_real_black"
+                        android:drawablePadding="@dimen/space_4dp"
+                        android:text="测试" />
+
+                    <ImageView
+                        android:id="@+id/shop_imageview"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_below="@+id/shop_name"
+                        android:layout_marginTop="@dimen/space_12dp" />
+
+                    <TextView
+                        android:id="@+id/price_single_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥2000.00"
+                        android:layout_alignParentEnd="true"
+                        style="@style/text_14sp_black_bold"
+                        android:layout_alignTop="@id/shop_imageview"
+                        />
+
+                    <TextView
+                        android:id="@+id/book_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x0"
+                        style="@style/text_14sp_999999"
+                        android:layout_alignEnd="@+id/price_single_textview"
+                        android:layout_below="@+id/price_single_textview"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/book_name"
+                        style="@style/text_14sp_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/shop_imageview"
+                        android:layout_marginStart="@dimen/space_12dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_toStartOf="@+id/price_single_textview"
+                        android:layout_toEndOf="@+id/shop_imageview"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="2020版《状元语文笔记》三 奥我到我的我熬到哦年级语文上册北师版aasdasdasd" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="11dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/space_16dp"
+                        android:text="退款金额"
+                        android:textColor="@color/black_three"
+                        android:textSize="@dimen/font_size_14sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_refundPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/text_14sp_black"
+                        android:layout_alignParentEnd="true"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_orderNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="11dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/space_16dp"
+                        android:text="订单编号"
+                        android:textColor="@color/black_three"
+                        android:textSize="@dimen/font_size_14sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_orderNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/text_14sp_black"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="11dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvreson"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/space_16dp"
+                        android:text="退款原因"
+                        android:textColor="@color/black_three"
+                        android:textSize="@dimen/font_size_14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_refundWilling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/text_14sp_black"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toEndOf="@+id/tvreson"
+                        android:layout_marginStart="20dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/space_16dp"
+                        android:text="申请时间"
+                        android:textColor="@color/black_three"
+                        android:textSize="@dimen/font_size_14sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_applyTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/text_14sp_black"
+                        android:layout_alignParentEnd="true"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

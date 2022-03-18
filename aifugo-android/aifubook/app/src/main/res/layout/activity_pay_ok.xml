@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/view_color_F8F8F8"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_f7553b" />
+
+    <ImageView
+        android:layout_marginTop="@dimen/space_100dp"
+        android:src="@mipmap/zhifuchenggong"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="@dimen/space_20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="恭喜你，购买成功"
+        style="@style/TextSize_15_Color_Black_threes" />
+
+    <TextView
+        android:id="@+id/showDetails"
+        android:gravity="center"
+        android:text="查看详情"
+        android:textColor="@color/white"
+        android:background="@drawable/homepage_theme_ra_45"
+        android:layout_marginTop="@dimen/space_30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/space_100dp"
+        android:layout_height="@dimen/space_30dp" />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomAttributes">
+
+        <!-- Color of ripple animation -->
+        <attr name="ca_rippleColor" format="color|reference" />
+        <!-- Speed of ripple animation -->
+        <attr name="ca_rippleSpeed" format="float" />
+        <!-- indicate if the slider must show number indicator -->
+        <attr name="ca_showNumberIndicator" format="boolean" />
+        <!-- in progress view indicate max value of progress -->
+        <attr name="ca_max" format="integer" />
+        <!-- in progress view indicate min value of progress -->
+        <attr name="ca_min" format="integer" />
+        <!-- in progress view indicate value of progress -->
+        <attr name="ca_value" format="integer" />
+        <!-- in progress view indicate value of progress -->
+        <attr name="ca_progress" format="integer" />
+        <attr name="ca_ringWidth" format="dimension" />
+        <!-- in switche's view indicate state of view -->
+        <attr name="ca_check" format="boolean" />
+        <attr name="ca_checkBoxSize" format="dimension" />
+        <attr name="ca_thumbSize" format="dimension" />
+        <!-- in float button indicate icon resource -->
+        <attr name="ca_iconDrawable" format="integer" />
+        <!-- in button whitch contains drawable indicate icon resource -->
+        <attr name="ca_iconSize" format="dimension" />
+        <!-- in float button indicate if must start with animation -->
+        <attr name="ca_animate" format="boolean" />
+        <!-- set the border of the ripple frame -->
+        <attr name="ca_rippleBorderRadius" format="float" />
+        <!-- if true, delays calls to OnClickListeners until ripple effect ends -->
+        <attr name="ca_clickAfterRipple" format="boolean" />
+        <!-- textColor -->
+        <attr name="ca_textColor" format="color|reference" />
+    </declare-styleable>
+
+</resources>
